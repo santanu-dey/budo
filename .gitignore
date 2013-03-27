@@ -1,1 +1,6 @@
 tartget/*zip
+*.jtl
+target/apiproxy
+target/apiproxy/**
+target/config.json
+target/jmeter

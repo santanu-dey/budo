@@ -1,0 +1,1480 @@
+Apache Maven 3.0.3 (r1075438; 2011-02-28 23:01:09+0530)
+Maven home: /usr/share/maven
+Java version: 1.6.0_41, vendor: Apple Inc.
+Java home: /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+Default locale: en_US, platform encoding: MacRoman
+OS name: "mac os x", version: "10.7.5", arch: "x86_64", family: "mac"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from /usr/share/maven/conf/settings.xml
+[DEBUG] Reading user settings from /Users/santanudey/.m2/settings.xml
+[DEBUG] Using local repository at /Users/santanudey/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10 for /Users/santanudey/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project apigee-training-labs:simple-stub:pom:1.0: (none)
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: apigee-training-labs:simple-stub:pom:1.0
+[DEBUG] Tasks:   [install]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building simple-stub 1.0
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       apigee-training-labs:simple-stub:1.0
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): []
+[DEBUG] Repositories (dependencies): [apigee-cs-libs-release (http://repo.apigee.com:8081/artifactory/repo, releases), apigee-cs-repo (http://repo.apigee.com:8081/artifactory/repo, releases+snapshots), central (http://repo1.maven.org/maven2, releases)]
+[DEBUG] Repositories (plugins)     : [apigee-cs-plugins-release (http://repo.apigee.com:8081/artifactory/repo, releases), central (http://repo1.maven.org/maven2, releases), apigee-cs-repo (http://repo.apigee.com:8081/artifactory/repo, releases+snapshots)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (auto-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources (copy-resources-step)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory>/Users/santanudey/Projects/Training/src/lab01/target/apiproxy</outputDirectory>
+  <overwrite default-value="false">true</overwrite>
+  <project default-value="${project}"/>
+  <resources>
+    <resource>
+      <directory>apiproxy</directory>
+    </resource>
+  </resources>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] --- init fork of apigee-training-labs:simple-stub:1.0 for com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:configure (configure-bundle-step) ---
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): []
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (auto-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources (copy-resources-step)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory>/Users/santanudey/Projects/Training/src/lab01/target/apiproxy</outputDirectory>
+  <overwrite default-value="false">true</overwrite>
+  <project default-value="${project}"/>
+  <resources>
+    <resource>
+      <directory>apiproxy</directory>
+    </resource>
+  </resources>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] --- exit fork of apigee-training-labs:simple-stub:1.0 for com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:configure (configure-bundle-step) ---
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:configure (configure-bundle-step)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <apiVersion>${apigee.apiversion}</apiVersion>
+  <artifactId>${project.artifactId}</artifactId>
+  <baseDirectory>${basedir}</baseDirectory>
+  <buildDirectory>${project.build.directory}</buildDirectory>
+  <buildOption>${build.option}</buildOption>
+  <deploymentEnv default-value="${apigee.profile}">${apigee.env}</deploymentEnv>
+  <hostURL>${apigee.hosturl}</hostURL>
+  <id>${apigee.profile}</id>
+  <orgName>${apigee.org}</orgName>
+  <password>${apigee.password}</password>
+  <projectName>${project.name}</projectName>
+  <projectVersion>${project.version}</projectVersion>
+  <skip default-value="false">false</skip>
+  <userName>${apigee.username}</userName>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:2.3.1:install (default-install)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <artifact default-value="${project.artifact}"/>
+  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
+  <createChecksum default-value="false">${createChecksum}</createChecksum>
+  <localRepository>${localRepository}</localRepository>
+  <packaging default-value="${project.packaging}"/>
+  <pomFile default-value="${project.file}"/>
+  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
+</configuration>
+[DEBUG] --- init fork of apigee-training-labs:simple-stub:1.0 for com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:deploy (install-bundle-step) ---
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): []
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (auto-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources (copy-resources-step)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory>/Users/santanudey/Projects/Training/src/lab01/target/apiproxy</outputDirectory>
+  <overwrite default-value="false">true</overwrite>
+  <project default-value="${project}"/>
+  <resources>
+    <resource>
+      <directory>apiproxy</directory>
+    </resource>
+  </resources>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] --- init fork of apigee-training-labs:simple-stub:1.0 for com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:configure (configure-bundle-step) ---
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): []
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (auto-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources (copy-resources-step)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory>/Users/santanudey/Projects/Training/src/lab01/target/apiproxy</outputDirectory>
+  <overwrite default-value="false">true</overwrite>
+  <project default-value="${project}"/>
+  <resources>
+    <resource>
+      <directory>apiproxy</directory>
+    </resource>
+  </resources>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] --- exit fork of apigee-training-labs:simple-stub:1.0 for com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:configure (configure-bundle-step) ---
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:configure (configure-bundle-step)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <apiVersion>${apigee.apiversion}</apiVersion>
+  <artifactId>${project.artifactId}</artifactId>
+  <baseDirectory>${basedir}</baseDirectory>
+  <buildDirectory>${project.build.directory}</buildDirectory>
+  <buildOption>${build.option}</buildOption>
+  <deploymentEnv default-value="${apigee.profile}">${apigee.env}</deploymentEnv>
+  <hostURL>${apigee.hosturl}</hostURL>
+  <id>${apigee.profile}</id>
+  <orgName>${apigee.org}</orgName>
+  <password>${apigee.password}</password>
+  <projectName>${project.name}</projectName>
+  <projectVersion>${project.version}</projectVersion>
+  <skip default-value="false">false</skip>
+  <userName>${apigee.username}</userName>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:2.3.1:install (default-install)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <artifact default-value="${project.artifact}"/>
+  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
+  <createChecksum default-value="false">${createChecksum}</createChecksum>
+  <localRepository>${localRepository}</localRepository>
+  <packaging default-value="${project.packaging}"/>
+  <pomFile default-value="${project.file}"/>
+  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
+</configuration>
+[DEBUG] --- exit fork of apigee-training-labs:simple-stub:1.0 for com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:deploy (install-bundle-step) ---
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:deploy (install-bundle-step)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <apiVersion>${apigee.apiversion}</apiVersion>
+  <artifactId>${project.artifactId}</artifactId>
+  <baseDirectory>${basedir}</baseDirectory>
+  <buildDirectory>${project.build.directory}</buildDirectory>
+  <buildOption>${build.option}</buildOption>
+  <deploymentEnv default-value="${apigee.profile}">${apigee.env}</deploymentEnv>
+  <hostURL>${apigee.hosturl}</hostURL>
+  <id>${apigee.profile}</id>
+  <orgName>${apigee.org}</orgName>
+  <password>${apigee.password}</password>
+  <projectName>${project.name}</projectName>
+  <projectVersion>${project.version}</projectVersion>
+  <skip default-value="false">false</skip>
+  <userName>${apigee.username}</userName>
+</configuration>
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (auto-clean) @ simple-stub ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.transfer < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.metadata < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.collection < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.version < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.artifact < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.graph < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.deployment < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.installation < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.resolution < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = /Users/santanudey/Projects/Training/src/lab01/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /Users/santanudey/Projects/Training/src/lab01/target/classes
+[DEBUG]   (f) reportDirectory = /Users/santanudey/Projects/Training/src/lab01/target/site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /Users/santanudey/Projects/Training/src/lab01/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /Users/santanudey/Projects/Training/src/lab01/target
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets/default.xml
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/simple-stub.xml
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies/default.xml
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies/assignPayload.xml
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target
+[DEBUG] Skipping non-existing directory /Users/santanudey/Projects/Training/src/lab01/target/classes
+[DEBUG] Skipping non-existing directory /Users/santanudey/Projects/Training/src/lab01/target/test-classes
+[DEBUG] Skipping non-existing directory /Users/santanudey/Projects/Training/src/lab01/target/site
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:copy-resources (copy-resources-step) @ simple-stub ---
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Users/santanudey/Projects/Training/src/lab01/target/apiproxy
+[DEBUG]   (s) overwrite = true
+[DEBUG]   (f) project = MavenProject: apigee-training-labs:simple-stub:1.0 @ /Users/santanudey/Projects/Training/src/lab01/pom.xml
+[DEBUG]   (s) directory = apiproxy
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: apiproxy, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6e30fc1f
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Apple Inc., sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.SECURITYSESSIONID=186a3, os.name=Mac OS X, sun.boot.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar, env.TMPDIR=/var/folders/4q/2wkj_1v96wl2_14w18rqyssw0000gn/T/, env.Apple_Ubiquity_Message=/tmp/launch-oW04Wk/Apple_Ubiquity_Message, env.PWD=/Users/santanudey/Projects/Training/src/lab01, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Sun Microsystems Inc., java.runtime.version=1.6.0_41-b02-445-11M4107, env.Apple_PubSub_Socket_Render=/tmp/launch-WN24Zu/Render, env.DISPLAY=/tmp/launch-98C4WK/org.x:0, env.rvm_version=1.17.3 (stable), user.name=santanudey, env.escape_flag=1, env.USER=santanudey, env.SHELL=/bin/bash, env.__CF_USER_TEXT_ENCODING=0x1F5:0:0, awt.nativeDoubleBuffering=true, env.PATH=/Users/santanudey/android-sdks/platform-tools/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Users/santanudey/.rvm/bin, user.language=en, env.rvm_prefix=/Users/santanudey, sun.boot.library.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries, classworlds.conf=/usr/share/maven/bin/m2.conf, env.rvm_path=/Users/santanudey/.rvm, java.version=1.6.0_41, user.timezone=GMT+05:30, env._first=0, sun.arch.data.model=64, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.endorsed.dirs=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=MacRoman, env.rvm_bin_path=/Users/santanudey/.rvm/bin, file.encoding.pkg=sun.io, env.SHLVL=1, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=50.0, user.country=US, apigee.profile=test, java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home, java.vm.info=mixed mode, env.LOGNAME=santanudey, os.version=10.7.5, env.TERM_PROGRAM_VERSION=303.2, path.separator=:, java.vm.version=20.14-b01-445, env._second=1, apigee.password=Pg5lzwAyd7, java.awt.printerjob=apple.awt.CPrinterJob, env.TERM=xterm-256color, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=apple.awt.CToolkit, apigee.hosturl=https://api.enterprise.apigee.com, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, user.home=/Users/santanudey, env.OLDPWD=/Users/santanudey/Projects/Training/src/lab01, java.specification.vendor=Sun Microsystems Inc., env.TERM_PROGRAM=Apple_Terminal, java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.vendor.url=http://www.apple.com/, java.vm.vendor=Apple Inc., gopherProxySet=false, apigee.env=test, maven.home=/usr/share/maven, apigee.username=dey.santanu@gmail.com, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher install -Ptest1 -X, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.4.jar, env.TERM_SESSION_ID=3C3D6F23-6940-46EC-AFA7-3978C478DC55, env.com.apple.java.jvmMode=client, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.0, sun.cpu.endian=little, sun.os.patch.level=unknown, env.HOME=/Users/santanudey, java.io.tmpdir=/var/folders/4q/2wkj_1v96wl2_14w18rqyssw0000gn/T/, apigee.org=test-4g, java.vendor.url.bug=http://bugreport.apple.com/, env.SSH_AUTH_SOCK=/tmp/launch-pmgBR8/Listeners, env.COMMAND_MODE=unix2003, mrj.build=11M4107, os.arch=x86_64, java.awt.graphicsenv=apple.awt.CGraphicsEnvironment, env.__array_start=0, java.ext.dirs=/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext, mrj.version=1070.1.6.0_41-445, env.com.apple.java.jvmTask=CommandLine_Manual.java, user.dir=/Users/santanudey/Projects/Training/src/lab01, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, apigee.apiversion=v1, file.encoding=MacRoman, env.JAVA_MAIN_CLASS_2446=org.codehaus.plexus.classworlds.launcher.Launcher, java.specification.version=1.6}
+[WARNING] Using platform encoding (MacRoman actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory apiproxy
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 4 resources
+[DEBUG] file assignPayload.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/policies/assignPayload.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies/assignPayload.xml
+[DEBUG] file default.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/proxies/default.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies/default.xml
+[DEBUG] file simple-stub.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/simple-stub.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/simple-stub.xml
+[DEBUG] file default.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/targets/default.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets/default.xml
+[DEBUG] no use filter components
+[INFO] 
+[INFO] >>> 4G-gateway-maven-build-pack:0.0.9:configure (configure-bundle-step) @ simple-stub >>>
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (auto-clean) @ simple-stub ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = /Users/santanudey/Projects/Training/src/lab01/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /Users/santanudey/Projects/Training/src/lab01/target/classes
+[DEBUG]   (f) reportDirectory = /Users/santanudey/Projects/Training/src/lab01/target/site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /Users/santanudey/Projects/Training/src/lab01/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /Users/santanudey/Projects/Training/src/lab01/target
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets/default.xml
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/simple-stub.xml
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies/default.xml
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies/assignPayload.xml
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target
+[DEBUG] Skipping non-existing directory /Users/santanudey/Projects/Training/src/lab01/target/classes
+[DEBUG] Skipping non-existing directory /Users/santanudey/Projects/Training/src/lab01/target/test-classes
+[DEBUG] Skipping non-existing directory /Users/santanudey/Projects/Training/src/lab01/target/site
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:copy-resources (copy-resources-step) @ simple-stub ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Users/santanudey/Projects/Training/src/lab01/target/apiproxy
+[DEBUG]   (s) overwrite = true
+[DEBUG]   (f) project = MavenProject: apigee-training-labs:simple-stub:1.0 @ /Users/santanudey/Projects/Training/src/lab01/pom.xml
+[DEBUG]   (s) directory = apiproxy
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: apiproxy, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6e30fc1f
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Apple Inc., sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.SECURITYSESSIONID=186a3, os.name=Mac OS X, sun.boot.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar, env.TMPDIR=/var/folders/4q/2wkj_1v96wl2_14w18rqyssw0000gn/T/, env.Apple_Ubiquity_Message=/tmp/launch-oW04Wk/Apple_Ubiquity_Message, env.PWD=/Users/santanudey/Projects/Training/src/lab01, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Sun Microsystems Inc., java.runtime.version=1.6.0_41-b02-445-11M4107, env.Apple_PubSub_Socket_Render=/tmp/launch-WN24Zu/Render, env.DISPLAY=/tmp/launch-98C4WK/org.x:0, env.rvm_version=1.17.3 (stable), user.name=santanudey, env.escape_flag=1, env.USER=santanudey, env.SHELL=/bin/bash, env.__CF_USER_TEXT_ENCODING=0x1F5:0:0, awt.nativeDoubleBuffering=true, env.PATH=/Users/santanudey/android-sdks/platform-tools/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Users/santanudey/.rvm/bin, user.language=en, env.rvm_prefix=/Users/santanudey, sun.boot.library.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries, classworlds.conf=/usr/share/maven/bin/m2.conf, env.rvm_path=/Users/santanudey/.rvm, java.version=1.6.0_41, user.timezone=GMT+05:30, env._first=0, sun.arch.data.model=64, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.endorsed.dirs=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=MacRoman, env.rvm_bin_path=/Users/santanudey/.rvm/bin, file.encoding.pkg=sun.io, env.SHLVL=1, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=50.0, user.country=US, apigee.profile=test, java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home, java.vm.info=mixed mode, env.LOGNAME=santanudey, os.version=10.7.5, env.TERM_PROGRAM_VERSION=303.2, path.separator=:, java.vm.version=20.14-b01-445, env._second=1, apigee.password=Pg5lzwAyd7, java.awt.printerjob=apple.awt.CPrinterJob, env.TERM=xterm-256color, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=apple.awt.CToolkit, apigee.hosturl=https://api.enterprise.apigee.com, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, user.home=/Users/santanudey, env.OLDPWD=/Users/santanudey/Projects/Training/src/lab01, java.specification.vendor=Sun Microsystems Inc., env.TERM_PROGRAM=Apple_Terminal, java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.vendor.url=http://www.apple.com/, java.vm.vendor=Apple Inc., gopherProxySet=false, apigee.env=test, maven.home=/usr/share/maven, apigee.username=dey.santanu@gmail.com, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher install -Ptest1 -X, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.4.jar, env.TERM_SESSION_ID=3C3D6F23-6940-46EC-AFA7-3978C478DC55, env.com.apple.java.jvmMode=client, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.0, sun.cpu.endian=little, sun.os.patch.level=unknown, env.HOME=/Users/santanudey, java.io.tmpdir=/var/folders/4q/2wkj_1v96wl2_14w18rqyssw0000gn/T/, apigee.org=test-4g, java.vendor.url.bug=http://bugreport.apple.com/, env.SSH_AUTH_SOCK=/tmp/launch-pmgBR8/Listeners, env.COMMAND_MODE=unix2003, mrj.build=11M4107, os.arch=x86_64, java.awt.graphicsenv=apple.awt.CGraphicsEnvironment, env.__array_start=0, java.ext.dirs=/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext, mrj.version=1070.1.6.0_41-445, env.com.apple.java.jvmTask=CommandLine_Manual.java, user.dir=/Users/santanudey/Projects/Training/src/lab01, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, apigee.apiversion=v1, file.encoding=MacRoman, env.JAVA_MAIN_CLASS_2446=org.codehaus.plexus.classworlds.launcher.Launcher, java.specification.version=1.6}
+[WARNING] Using platform encoding (MacRoman actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory apiproxy
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 4 resources
+[DEBUG] file assignPayload.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/policies/assignPayload.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies/assignPayload.xml
+[DEBUG] file default.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/proxies/default.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies/default.xml
+[DEBUG] file simple-stub.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/simple-stub.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/simple-stub.xml
+[DEBUG] file default.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/targets/default.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets/default.xml
+[DEBUG] no use filter components
+[INFO] 
+[INFO] <<< 4G-gateway-maven-build-pack:0.0.9:configure (configure-bundle-step) @ simple-stub <<<
+[INFO] 
+[INFO] --- 4G-gateway-maven-build-pack:0.0.9:configure (configure-bundle-step) @ simple-stub ---
+[DEBUG] com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:jar:0.0.9:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0:compile
+[DEBUG]    com.google.http-client:google-http-client:jar:1.10.3-beta:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:1.3.9:compile
+[DEBUG]       org.apache.httpcomponents:httpclient:jar:4.0.3:compile
+[DEBUG]          org.apache.httpcomponents:httpcore:jar:4.0.1:compile
+[DEBUG]       org.codehaus.jackson:jackson-core-asl:jar:1.9.4:compile
+[DEBUG]       xpp3:xpp3:jar:1.1.4c:compile
+[DEBUG]       com.google.protobuf:protobuf-java:jar:2.2.0:compile
+[DEBUG]    org.slf4j:slf4j-log4j12:jar:1.6.6:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.6.6:compile
+[DEBUG]       log4j:log4j:jar:1.2.17:compile
+[DEBUG]    org.apache.commons:commons-lang3:jar:3.1:compile
+[DEBUG]    com.google.guava:guava:jar:12.0:compile
+[DEBUG]    com.google.code.gson:gson:jar:2.2.2:compile
+[DEBUG]    xalan:xalan:jar:2.7.1:compile
+[DEBUG]       xalan:serializer:jar:2.7.1:compile
+[DEBUG]          xml-apis:xml-apis:jar:1.3.04:compile
+[DEBUG]    com.apigee.cs:apigee-util:jar:1.0.18:compile
+[DEBUG]       commons-io:commons-io:jar:2.0.1:compile
+[DEBUG]       org.slf4j:log4j-over-slf4j:jar:1.6.4:compile
+[DEBUG]       org.slf4j:jcl-over-slf4j:jar:1.6.4:compile
+[DEBUG]       org.slf4j:jul-to-slf4j:jar:1.6.4:compile
+[DEBUG]    com.apigee.cs:apigee-scripting-tool:jar:1.0.17:compile
+[DEBUG]       com.sun.jersey:jersey-client:jar:1.9.1:compile
+[DEBUG]          com.sun.jersey:jersey-core:jar:1.9.1:compile
+[DEBUG]       commons-codec:commons-codec:jar:1.5:compile
+[DEBUG]       com.sun.jersey.contribs:jersey-apache-client4:jar:1.9.1:compile
+[DEBUG]       annogen:annogen:distribution-zip:0.1.0:compile
+[DEBUG]       org.apache.ws.commons.axiom:axiom-api:jar:1.2.5:compile
+[DEBUG]          javax.mail:mail:jar:1.4:compile
+[DEBUG]             javax.activation:activation:jar:1.1:compile
+[DEBUG]          stax:stax-api:jar:1.0.1:compile
+[DEBUG]       org.apache.ws.commons.axiom:axiom-dom:jar:1.2.5:compile
+[DEBUG]       org.apache.ws.commons.axiom:axiom-impl:jar:1.2.5:compile
+[DEBUG]       org.apache.axis2:axis2-kernel:jar:1.3:compile
+[DEBUG]          javax.servlet:servlet-api:jar:2.3:compile
+[DEBUG]          org.codehaus.woodstox:wstx-asl:jar:3.2.1:compile
+[DEBUG]          annogen:annogen:jar:0.1.0:compile
+[DEBUG]          org.apache.geronimo.specs:geronimo-jms_1.1_spec:jar:1.1:compile
+[DEBUG]          xerces:xercesImpl:jar:2.8.1:compile
+[DEBUG]       org.apache.axis2:axis2-metadata:jar:1.3:compile
+[DEBUG]          org.apache.axis2:axis2-jws-api:jar:1.3:compile
+[DEBUG]             org.apache.ant:ant:jar:1.7.0:compile
+[DEBUG]             org.apache.ant:ant-launcher:jar:1.7.0:compile
+[DEBUG]          org.apache.axis2:axis2-jaxws-api:jar:1.3:compile
+[DEBUG]             org.apache.axis2:axis2-saaj-api:jar:1.3:compile
+[DEBUG]                org.apache.geronimo.specs:geronimo-javamail_1.4_spec:jar:1.0-M1:compile
+[DEBUG]                org.apache.geronimo.specs:geronimo-activation_1.1_spec:jar:1.0-M1:compile
+[DEBUG]          org.apache.axis2:axis2-saaj:jar:1.3:compile
+[DEBUG]          com.sun.xml.bind:jaxb-impl:jar:2.0.5:compile
+[DEBUG]             javax.xml.bind:jsr173_api:jar:1.0:compile
+[DEBUG]          com.sun.xml.bind:jaxb-xjc:jar:2.0.5:compile
+[DEBUG]          javax.xml.bind:jaxb-api:jar:2.0:compile
+[DEBUG]       backport-util-concurrent:backport-util-concurrent:jar:2.2:compile
+[DEBUG]       commons-beanutils:commons-beanutils-bean-collections:jar:1.8.3:compile
+[DEBUG]       commons-beanutils:commons-beanutils-core:jar:1.8.3:compile
+[DEBUG]       commons-beanutils:commons-beanutils:jar:1.8.3:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.1:compile
+[DEBUG]       commons-collections:commons-collections:jar:3.2.1:compile
+[DEBUG]       commons-dbcp:commons-dbcp:jar:1.2.2:compile
+[DEBUG]       commons-digester:commons-digester:jar:1.8:compile
+[DEBUG]       commons-fileupload:commons-fileupload:jar:1.1.1:compile
+[DEBUG]       commons-httpclient:commons-httpclient:jar:3.1:compile
+[DEBUG]       commons-lang:commons-lang:jar:2.4:compile
+[DEBUG]       commons-logging:commons-logging:jar:99.0-does-not-exist:compile
+[DEBUG]       commons-pool:commons-pool:jar:1.3:compile
+[DEBUG]       oro:oro:jar:2.0.8:compile
+[DEBUG]       jaxen:jaxen:jar:1.1.1:compile
+[DEBUG]          dom4j:dom4j:jar:1.6.1:compile
+[DEBUG]          jdom:jdom:jar:1.0:compile
+[DEBUG]          xom:xom:jar:1.0:compile
+[DEBUG]             xerces:xmlParserAPIs:jar:2.6.2:compile
+[DEBUG]             com.ibm.icu:icu4j:jar:2.6.1:compile
+[DEBUG]       jaxb:jsr173_api:jar:1.0:compile
+[DEBUG]       org.apache.neethi:neethi:jar:2.0.2:compile
+[DEBUG]       xml-resolver:xml-resolver:jar:1.1:compile
+[DEBUG]       wsdl4j:wsdl4j:jar:1.6.2:compile
+[DEBUG]       org.apache.xmlbeans:xmlbeans:jar:2.4.0:compile
+[DEBUG]       org.apache.xmlbeans:xmlbeans-xpath:jar:2.4.0:compile
+[DEBUG]          net.sf.saxon:saxon:jar:9:compile
+[DEBUG]       org.apache.xmlbeans:xmlbeans-xmlpublic:jar:2.4.0:compile
+[DEBUG]       org.apache.ws.commons.schema:XmlSchema:jar:1.4:compile
+[DEBUG]       com.apigee:config-client:jar:3.8.0.0:compile
+[DEBUG]       com.apigee:common:jar:3.8.0.0:compile
+[DEBUG]       com.apigee:memcache:jar:3.8.0.0:compile
+[DEBUG]       com.apigee:configbeans:jar:3.8.0.0:compile
+[DEBUG]       com.apigee:logging:jar:3.8.0.0:compile
+[DEBUG]       com.apigee:configuration:jar:3.8.0.0:compile
+[DEBUG]       com.apigee:saxon9:jar:3.8.0.0:compile
+[DEBUG]       com.apigee:util:jar:3.8.0.0:compile
+[DEBUG]       com.apigee:transactions:jar:3.8.0.0:compile
+[DEBUG]       com.apigee:soapservices-client:jar:3.8.0.0:compile
+[DEBUG]       com.apigee:restservice-builders:jar:3.8.0.0:compile
+[DEBUG]       org.jruby:jruby-complete:jar:1.6.4:compile
+[DEBUG]       cglib:cglib-nodep:jar:2.2.2:compile
+[DEBUG]       org.eclipse.jgit:org.eclipse.jgit:jar:1.0.0.201106090707-r:compile
+[DEBUG]          com.jcraft:jsch:jar:0.1.44-1:compile
+[DEBUG]       ch.qos.logback:logback-classic:jar:0.9.30:compile
+[DEBUG]          ch.qos.logback:logback-core:jar:0.9.30:compile
+[DEBUG]       commons-net:commons-net:jar:3.0.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:1.1:runtime
+[DEBUG] Created new class realm plugin>com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9
+[DEBUG] Importing foreign packages into class realm plugin>com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9
+[DEBUG]   Included: com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:jar:0.0.9
+[DEBUG]   Included: com.google.http-client:google-http-client:jar:1.10.3-beta
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:1.3.9
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.0.3
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.0.1
+[DEBUG]   Included: org.codehaus.jackson:jackson-core-asl:jar:1.9.4
+[DEBUG]   Included: xpp3:xpp3:jar:1.1.4c
+[DEBUG]   Included: com.google.protobuf:protobuf-java:jar:2.2.0
+[DEBUG]   Included: org.slf4j:slf4j-log4j12:jar:1.6.6
+[DEBUG]   Included: org.slf4j:slf4j-api:jar:1.6.6
+[DEBUG]   Included: log4j:log4j:jar:1.2.17
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.1
+[DEBUG]   Included: com.google.guava:guava:jar:12.0
+[DEBUG]   Included: com.google.code.gson:gson:jar:2.2.2
+[DEBUG]   Included: xalan:xalan:jar:2.7.1
+[DEBUG]   Included: xalan:serializer:jar:2.7.1
+[DEBUG]   Included: xml-apis:xml-apis:jar:1.3.04
+[DEBUG]   Included: com.apigee.cs:apigee-util:jar:1.0.18
+[DEBUG]   Included: commons-io:commons-io:jar:2.0.1
+[DEBUG]   Included: org.slf4j:log4j-over-slf4j:jar:1.6.4
+[DEBUG]   Included: org.slf4j:jcl-over-slf4j:jar:1.6.4
+[DEBUG]   Included: org.slf4j:jul-to-slf4j:jar:1.6.4
+[DEBUG]   Included: com.apigee.cs:apigee-scripting-tool:jar:1.0.17
+[DEBUG]   Included: com.sun.jersey:jersey-client:jar:1.9.1
+[DEBUG]   Included: com.sun.jersey:jersey-core:jar:1.9.1
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.5
+[DEBUG]   Included: com.sun.jersey.contribs:jersey-apache-client4:jar:1.9.1
+[DEBUG]   Included: annogen:annogen:distribution-zip:0.1.0
+[DEBUG]   Included: org.apache.ws.commons.axiom:axiom-api:jar:1.2.5
+[DEBUG]   Included: javax.mail:mail:jar:1.4
+[DEBUG]   Included: javax.activation:activation:jar:1.1
+[DEBUG]   Included: stax:stax-api:jar:1.0.1
+[DEBUG]   Included: org.apache.ws.commons.axiom:axiom-dom:jar:1.2.5
+[DEBUG]   Included: org.apache.ws.commons.axiom:axiom-impl:jar:1.2.5
+[DEBUG]   Included: org.apache.axis2:axis2-kernel:jar:1.3
+[DEBUG]   Included: javax.servlet:servlet-api:jar:2.3
+[DEBUG]   Included: org.codehaus.woodstox:wstx-asl:jar:3.2.1
+[DEBUG]   Included: annogen:annogen:jar:0.1.0
+[DEBUG]   Included: org.apache.geronimo.specs:geronimo-jms_1.1_spec:jar:1.1
+[DEBUG]   Included: xerces:xercesImpl:jar:2.8.1
+[DEBUG]   Included: org.apache.axis2:axis2-metadata:jar:1.3
+[DEBUG]   Included: org.apache.axis2:axis2-jws-api:jar:1.3
+[DEBUG]   Included: org.apache.ant:ant:jar:1.7.0
+[DEBUG]   Included: org.apache.ant:ant-launcher:jar:1.7.0
+[DEBUG]   Included: org.apache.axis2:axis2-jaxws-api:jar:1.3
+[DEBUG]   Included: org.apache.axis2:axis2-saaj-api:jar:1.3
+[DEBUG]   Included: org.apache.geronimo.specs:geronimo-javamail_1.4_spec:jar:1.0-M1
+[DEBUG]   Included: org.apache.geronimo.specs:geronimo-activation_1.1_spec:jar:1.0-M1
+[DEBUG]   Included: org.apache.axis2:axis2-saaj:jar:1.3
+[DEBUG]   Included: com.sun.xml.bind:jaxb-impl:jar:2.0.5
+[DEBUG]   Included: javax.xml.bind:jsr173_api:jar:1.0
+[DEBUG]   Included: com.sun.xml.bind:jaxb-xjc:jar:2.0.5
+[DEBUG]   Included: javax.xml.bind:jaxb-api:jar:2.0
+[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:2.2
+[DEBUG]   Included: commons-beanutils:commons-beanutils-bean-collections:jar:1.8.3
+[DEBUG]   Included: commons-beanutils:commons-beanutils-core:jar:1.8.3
+[DEBUG]   Included: commons-beanutils:commons-beanutils:jar:1.8.3
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.1
+[DEBUG]   Included: commons-collections:commons-collections:jar:3.2.1
+[DEBUG]   Included: commons-dbcp:commons-dbcp:jar:1.2.2
+[DEBUG]   Included: commons-digester:commons-digester:jar:1.8
+[DEBUG]   Included: commons-fileupload:commons-fileupload:jar:1.1.1
+[DEBUG]   Included: commons-httpclient:commons-httpclient:jar:3.1
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.4
+[DEBUG]   Included: commons-logging:commons-logging:jar:99.0-does-not-exist
+[DEBUG]   Included: commons-pool:commons-pool:jar:1.3
+[DEBUG]   Included: oro:oro:jar:2.0.8
+[DEBUG]   Included: jaxen:jaxen:jar:1.1.1
+[DEBUG]   Included: dom4j:dom4j:jar:1.6.1
+[DEBUG]   Included: jdom:jdom:jar:1.0
+[DEBUG]   Included: xom:xom:jar:1.0
+[DEBUG]   Included: xerces:xmlParserAPIs:jar:2.6.2
+[DEBUG]   Included: com.ibm.icu:icu4j:jar:2.6.1
+[DEBUG]   Included: jaxb:jsr173_api:jar:1.0
+[DEBUG]   Included: org.apache.neethi:neethi:jar:2.0.2
+[DEBUG]   Included: xml-resolver:xml-resolver:jar:1.1
+[DEBUG]   Included: wsdl4j:wsdl4j:jar:1.6.2
+[DEBUG]   Included: org.apache.xmlbeans:xmlbeans:jar:2.4.0
+[DEBUG]   Included: org.apache.xmlbeans:xmlbeans-xpath:jar:2.4.0
+[DEBUG]   Included: net.sf.saxon:saxon:jar:9
+[DEBUG]   Included: org.apache.xmlbeans:xmlbeans-xmlpublic:jar:2.4.0
+[DEBUG]   Included: org.apache.ws.commons.schema:XmlSchema:jar:1.4
+[DEBUG]   Included: com.apigee:config-client:jar:3.8.0.0
+[DEBUG]   Included: com.apigee:common:jar:3.8.0.0
+[DEBUG]   Included: com.apigee:memcache:jar:3.8.0.0
+[DEBUG]   Included: com.apigee:configbeans:jar:3.8.0.0
+[DEBUG]   Included: com.apigee:logging:jar:3.8.0.0
+[DEBUG]   Included: com.apigee:configuration:jar:3.8.0.0
+[DEBUG]   Included: com.apigee:saxon9:jar:3.8.0.0
+[DEBUG]   Included: com.apigee:util:jar:3.8.0.0
+[DEBUG]   Included: com.apigee:transactions:jar:3.8.0.0
+[DEBUG]   Included: com.apigee:soapservices-client:jar:3.8.0.0
+[DEBUG]   Included: com.apigee:restservice-builders:jar:3.8.0.0
+[DEBUG]   Included: org.jruby:jruby-complete:jar:1.6.4
+[DEBUG]   Included: cglib:cglib-nodep:jar:2.2.2
+[DEBUG]   Included: org.eclipse.jgit:org.eclipse.jgit:jar:1.0.0.201106090707-r
+[DEBUG]   Included: com.jcraft:jsch:jar:0.1.44-1
+[DEBUG]   Included: ch.qos.logback:logback-classic:jar:0.9.30
+[DEBUG]   Included: ch.qos.logback:logback-core:jar:0.9.30
+[DEBUG]   Included: commons-net:commons-net:jar:3.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0
+[DEBUG] Configuring mojo com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:configure from plugin realm ClassRealm[plugin>com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:configure' with basic configurator -->
+[DEBUG]   (f) apiVersion = v1
+[DEBUG]   (f) artifactId = simple-stub
+[DEBUG]   (s) baseDirectory = /Users/santanudey/Projects/Training/src/lab01
+[DEBUG]   (f) buildDirectory = /Users/santanudey/Projects/Training/src/lab01/target
+[DEBUG]   (f) deploymentEnv = test
+[DEBUG]   (f) hostURL = https://api.enterprise.apigee.com
+[DEBUG]   (s) id = test
+[DEBUG]   (f) orgName = test-4g
+[DEBUG]   (f) password = Pg5lzwAyd7
+[DEBUG]   (f) projectName = simple-stub
+[DEBUG]   (f) projectVersion = 1.0
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) userName = dey.santanu@gmail.com
+[DEBUG] -- end configuration --
+15:13:06,848 DEBUG ConfigureMojo:54 - 
+
+=============Now updating the configuration values for the App Bundle================
+
+
+15:13:06,872 DEBUG XMLFileListUtil:125 - =============Searching for XML files in the following directory ================
+/Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies
+15:13:06,872 DEBUG XMLFileListUtil:129 - =============Nuber of files found is================
+1
+15:13:06,914  INFO FileReader:56 - ============= Reading the config file located at ================
+/Users/santanudey/Projects/Training/src/lab01/config.json
+15:13:06,917  INFO PackageConfigurer:60 - =============Replacing config tokens for Environment test, for proxy file name default.xml================
+
+15:13:06,925  INFO PackageConfigurer:173 - ============= to apply the following config tokens ================
+{
+  "name": "default.xml",
+  "tokens": [
+    {
+      "xpath": "/ProxyEndpoint/HTTPProxyConnection/BasePath",
+      "value": "/v1/stub"
+    }
+  ]
+}
+15:13:06,925 DEBUG PackageConfigurer:184 - =============Checking for Xpath Expressions /ProxyEndpoint/HTTPProxyConnection/BasePath  ================
+
+15:13:06,998 DEBUG PackageConfigurer:198 - =============Updated existing value TO_BE_REPLACED to new value /v1/stub ================
+
+15:13:07,020 DEBUG XMLFileListUtil:125 - =============Searching for XML files in the following directory ================
+/Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies
+15:13:07,020 DEBUG XMLFileListUtil:129 - =============Nuber of files found is================
+1
+15:13:07,020 DEBUG XMLFileListUtil:125 - =============Searching for XML files in the following directory ================
+/Users/santanudey/Projects/Training/src/lab01/target/apiproxy/stepdefinitions
+15:13:07,020 DEBUG XMLFileListUtil:131 - =============Error Encountered in Searching files [/Users/santanudey/Projects/Training/src/lab01/target/apiproxy/stepdefinitions]================
+java.lang.NullPointerException
+15:13:07,022  INFO PackageConfigurer:87 - =============Replacing config tokens for Environment test, for policy file name assignPayload.xml================
+
+15:13:07,023  INFO PackageConfigurer:173 - ============= to apply the following config tokens ================
+{
+  "name": "assignPayload.xml",
+  "tokens": [
+    {
+      "xpath": "/AssignMessage/Add/Headers/Header[@name\u003d\u0027TO_BE_REPLACED\u0027]",
+      "value": "max-age\u003d3600"
+    },
+    {
+      "xpath": "/AssignMessage/Add/Headers/Header[@name\u003d\u0027TO_BE_REPLACED\u0027]/@name",
+      "value": "Cache-Control"
+    }
+  ]
+}
+15:13:07,023 DEBUG PackageConfigurer:184 - =============Checking for Xpath Expressions /AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']  ================
+
+15:13:07,026 DEBUG PackageConfigurer:198 - =============Updated existing value TO_BE_REPLACED to new value max-age=3600 ================
+
+15:13:07,028 DEBUG PackageConfigurer:184 - =============Checking for Xpath Expressions /AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name  ================
+
+15:13:07,029 DEBUG PackageConfigurer:198 - =============Updated existing value TO_BE_REPLACED to new value Cache-Control ================
+
+15:13:07,031 DEBUG XMLFileListUtil:125 - =============Searching for XML files in the following directory ================
+/Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets
+15:13:07,031 DEBUG XMLFileListUtil:129 - =============Nuber of files found is================
+1
+15:13:07,033  INFO PackageConfigurer:114 - =============Replacing config tokens for Environment test, for policy file name default.xml================
+
+15:13:07,034  INFO PackageConfigurer:173 - ============= to apply the following config tokens ================
+{
+  "name": "default.xml",
+  "tokens": [
+    {
+      "xpath": "/TargetEndpoint/HTTPTargetConnection/URL",
+      "value": "http://weather.yahooapis.com"
+    }
+  ]
+}
+15:13:07,034 DEBUG PackageConfigurer:184 - =============Checking for Xpath Expressions /TargetEndpoint/HTTPTargetConnection/URL  ================
+
+15:13:07,035 DEBUG PackageConfigurer:198 - =============Updated existing value TO_BE_REPLACED to new value http://weather.yahooapis.com ================
+
+15:13:07,036 DEBUG XMLFileListUtil:125 - =============Searching for XML files in the following directory ================
+/Users/santanudey/Projects/Training/src/lab01/target/apiproxy
+15:13:07,036 DEBUG XMLFileListUtil:129 - =============Nuber of files found is================
+1
+15:13:07,095  INFO ConfigureMojo:83 - 
+
+=============Now zipping the App Bundle================
+
+
+15:13:07,097 DEBUG ZipUtils:63 - Creating : /Users/santanudey/Projects/Training/src/lab01/target/simple-stub1.0-test.zip
+15:13:07,098 DEBUG ZipUtils:78 -  Adding: /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies/assignPayload.xml
+15:13:07,099 DEBUG ZipUtils:78 -  Adding: /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies/default.xml
+15:13:07,099 DEBUG ZipUtils:78 -  Adding: /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/simple-stub.xml
+15:13:07,100 DEBUG ZipUtils:78 -  Adding: /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets/default.xml
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ simple-stub ---
+[DEBUG] org.apache.maven.plugins:maven-install-plugin:jar:2.3.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-digest:jar:1.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-install-plugin:jar:2.3.1
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-digest:jar:1.0
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1-alpha-2
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-install-plugin:2.3.1:install from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-install-plugin:2.3.1, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-install-plugin:2.3.1:install' with basic configurator -->
+[DEBUG]   (f) artifact = apigee-training-labs:simple-stub:pom:1.0
+[DEBUG]   (f) attachedArtifacts = []
+[DEBUG]   (f) createChecksum = false
+[DEBUG]   (f) localRepository =        id: local
+      url: file:///Users/santanudey/.m2/repository/
+   layout: none
+
+[DEBUG]   (f) packaging = pom
+[DEBUG]   (f) pomFile = /Users/santanudey/Projects/Training/src/lab01/pom.xml
+[DEBUG]   (f) updateReleaseInfo = false
+[DEBUG] -- end configuration --
+[INFO] Installing /Users/santanudey/Projects/Training/src/lab01/pom.xml to /Users/santanudey/.m2/repository/apigee-training-labs/simple-stub/1.0/simple-stub-1.0.pom
+[DEBUG] Installing apigee-training-labs:simple-stub/maven-metadata.xml to /Users/santanudey/.m2/repository/apigee-training-labs/simple-stub/maven-metadata-local.xml
+[INFO] 
+[INFO] >>> 4G-gateway-maven-build-pack:0.0.9:deploy (install-bundle-step) @ simple-stub >>>
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (auto-clean) @ simple-stub ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = /Users/santanudey/Projects/Training/src/lab01/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /Users/santanudey/Projects/Training/src/lab01/target/classes
+[DEBUG]   (f) reportDirectory = /Users/santanudey/Projects/Training/src/lab01/target/site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /Users/santanudey/Projects/Training/src/lab01/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /Users/santanudey/Projects/Training/src/lab01/target
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/simple-stub1.0-test.zip
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets/default.xml
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/simple-stub.xml
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies/default.xml
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies/assignPayload.xml
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target
+[DEBUG] Skipping non-existing directory /Users/santanudey/Projects/Training/src/lab01/target/classes
+[DEBUG] Skipping non-existing directory /Users/santanudey/Projects/Training/src/lab01/target/test-classes
+[DEBUG] Skipping non-existing directory /Users/santanudey/Projects/Training/src/lab01/target/site
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:copy-resources (copy-resources-step) @ simple-stub ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Users/santanudey/Projects/Training/src/lab01/target/apiproxy
+[DEBUG]   (s) overwrite = true
+[DEBUG]   (f) project = MavenProject: apigee-training-labs:simple-stub:1.0 @ /Users/santanudey/Projects/Training/src/lab01/pom.xml
+[DEBUG]   (s) directory = apiproxy
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: apiproxy, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6e30fc1f
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Apple Inc., sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.SECURITYSESSIONID=186a3, os.name=Mac OS X, sun.boot.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar, env.TMPDIR=/var/folders/4q/2wkj_1v96wl2_14w18rqyssw0000gn/T/, env.Apple_Ubiquity_Message=/tmp/launch-oW04Wk/Apple_Ubiquity_Message, env.PWD=/Users/santanudey/Projects/Training/src/lab01, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Sun Microsystems Inc., java.runtime.version=1.6.0_41-b02-445-11M4107, env.Apple_PubSub_Socket_Render=/tmp/launch-WN24Zu/Render, env.DISPLAY=/tmp/launch-98C4WK/org.x:0, env.rvm_version=1.17.3 (stable), user.name=santanudey, env.escape_flag=1, env.USER=santanudey, env.SHELL=/bin/bash, env.__CF_USER_TEXT_ENCODING=0x1F5:0:0, awt.nativeDoubleBuffering=true, env.PATH=/Users/santanudey/android-sdks/platform-tools/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Users/santanudey/.rvm/bin, user.language=en, env.rvm_prefix=/Users/santanudey, sun.boot.library.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries, classworlds.conf=/usr/share/maven/bin/m2.conf, env.rvm_path=/Users/santanudey/.rvm, java.version=1.6.0_41, user.timezone=GMT+05:30, env._first=0, sun.arch.data.model=64, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.endorsed.dirs=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=MacRoman, env.rvm_bin_path=/Users/santanudey/.rvm/bin, file.encoding.pkg=sun.io, env.SHLVL=1, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=50.0, user.country=US, apigee.profile=test, java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home, java.vm.info=mixed mode, env.LOGNAME=santanudey, os.version=10.7.5, env.TERM_PROGRAM_VERSION=303.2, path.separator=:, java.vm.version=20.14-b01-445, env._second=1, apigee.password=Pg5lzwAyd7, java.awt.printerjob=apple.awt.CPrinterJob, env.TERM=xterm-256color, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=apple.awt.CToolkit, apigee.hosturl=https://api.enterprise.apigee.com, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, user.home=/Users/santanudey, env.OLDPWD=/Users/santanudey/Projects/Training/src/lab01, java.specification.vendor=Sun Microsystems Inc., env.TERM_PROGRAM=Apple_Terminal, java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.vendor.url=http://www.apple.com/, java.vm.vendor=Apple Inc., gopherProxySet=false, apigee.env=test, maven.home=/usr/share/maven, apigee.username=dey.santanu@gmail.com, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher install -Ptest1 -X, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.4.jar, env.TERM_SESSION_ID=3C3D6F23-6940-46EC-AFA7-3978C478DC55, env.com.apple.java.jvmMode=client, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.0, sun.cpu.endian=little, sun.os.patch.level=unknown, env.HOME=/Users/santanudey, java.io.tmpdir=/var/folders/4q/2wkj_1v96wl2_14w18rqyssw0000gn/T/, apigee.org=test-4g, java.vendor.url.bug=http://bugreport.apple.com/, env.SSH_AUTH_SOCK=/tmp/launch-pmgBR8/Listeners, env.COMMAND_MODE=unix2003, mrj.build=11M4107, os.arch=x86_64, java.awt.graphicsenv=apple.awt.CGraphicsEnvironment, env.__array_start=0, java.ext.dirs=/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext, mrj.version=1070.1.6.0_41-445, env.com.apple.java.jvmTask=CommandLine_Manual.java, user.dir=/Users/santanudey/Projects/Training/src/lab01, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, apigee.apiversion=v1, file.encoding=MacRoman, env.JAVA_MAIN_CLASS_2446=org.codehaus.plexus.classworlds.launcher.Launcher, java.specification.version=1.6}
+[WARNING] Using platform encoding (MacRoman actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory apiproxy
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 4 resources
+[DEBUG] file assignPayload.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/policies/assignPayload.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies/assignPayload.xml
+[DEBUG] file default.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/proxies/default.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies/default.xml
+[DEBUG] file simple-stub.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/simple-stub.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/simple-stub.xml
+[DEBUG] file default.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/targets/default.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets/default.xml
+[DEBUG] no use filter components
+[INFO] 
+[INFO] >>> 4G-gateway-maven-build-pack:0.0.9:configure (configure-bundle-step) @ simple-stub >>>
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (auto-clean) @ simple-stub ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = /Users/santanudey/Projects/Training/src/lab01/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /Users/santanudey/Projects/Training/src/lab01/target/classes
+[DEBUG]   (f) reportDirectory = /Users/santanudey/Projects/Training/src/lab01/target/site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /Users/santanudey/Projects/Training/src/lab01/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /Users/santanudey/Projects/Training/src/lab01/target
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets/default.xml
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/simple-stub.xml
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies/default.xml
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies
+[INFO] Deleting file /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies/assignPayload.xml
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target/apiproxy
+[INFO] Deleting directory /Users/santanudey/Projects/Training/src/lab01/target
+[DEBUG] Skipping non-existing directory /Users/santanudey/Projects/Training/src/lab01/target/classes
+[DEBUG] Skipping non-existing directory /Users/santanudey/Projects/Training/src/lab01/target/test-classes
+[DEBUG] Skipping non-existing directory /Users/santanudey/Projects/Training/src/lab01/target/site
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:copy-resources (copy-resources-step) @ simple-stub ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Users/santanudey/Projects/Training/src/lab01/target/apiproxy
+[DEBUG]   (s) overwrite = true
+[DEBUG]   (f) project = MavenProject: apigee-training-labs:simple-stub:1.0 @ /Users/santanudey/Projects/Training/src/lab01/pom.xml
+[DEBUG]   (s) directory = apiproxy
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: apiproxy, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6e30fc1f
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Apple Inc., sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.SECURITYSESSIONID=186a3, os.name=Mac OS X, sun.boot.class.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar, env.TMPDIR=/var/folders/4q/2wkj_1v96wl2_14w18rqyssw0000gn/T/, env.Apple_Ubiquity_Message=/tmp/launch-oW04Wk/Apple_Ubiquity_Message, env.PWD=/Users/santanudey/Projects/Training/src/lab01, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Sun Microsystems Inc., java.runtime.version=1.6.0_41-b02-445-11M4107, env.Apple_PubSub_Socket_Render=/tmp/launch-WN24Zu/Render, env.DISPLAY=/tmp/launch-98C4WK/org.x:0, env.rvm_version=1.17.3 (stable), user.name=santanudey, env.escape_flag=1, env.USER=santanudey, env.SHELL=/bin/bash, env.__CF_USER_TEXT_ENCODING=0x1F5:0:0, awt.nativeDoubleBuffering=true, env.PATH=/Users/santanudey/android-sdks/platform-tools/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Users/santanudey/.rvm/bin, user.language=en, env.rvm_prefix=/Users/santanudey, sun.boot.library.path=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries, classworlds.conf=/usr/share/maven/bin/m2.conf, env.rvm_path=/Users/santanudey/.rvm, java.version=1.6.0_41, user.timezone=GMT+05:30, env._first=0, sun.arch.data.model=64, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.endorsed.dirs=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=MacRoman, env.rvm_bin_path=/Users/santanudey/.rvm/bin, file.encoding.pkg=sun.io, env.SHLVL=1, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=50.0, user.country=US, apigee.profile=test, java.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home, java.vm.info=mixed mode, env.LOGNAME=santanudey, os.version=10.7.5, env.TERM_PROGRAM_VERSION=303.2, path.separator=:, java.vm.version=20.14-b01-445, env._second=1, apigee.password=Pg5lzwAyd7, java.awt.printerjob=apple.awt.CPrinterJob, env.TERM=xterm-256color, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=apple.awt.CToolkit, apigee.hosturl=https://api.enterprise.apigee.com, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, user.home=/Users/santanudey, env.OLDPWD=/Users/santanudey/Projects/Training/src/lab01, java.specification.vendor=Sun Microsystems Inc., env.TERM_PROGRAM=Apple_Terminal, java.library.path=.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.vendor.url=http://www.apple.com/, java.vm.vendor=Apple Inc., gopherProxySet=false, apigee.env=test, maven.home=/usr/share/maven, apigee.username=dey.santanu@gmail.com, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher install -Ptest1 -X, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.4.jar, env.TERM_SESSION_ID=3C3D6F23-6940-46EC-AFA7-3978C478DC55, env.com.apple.java.jvmMode=client, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.0, sun.cpu.endian=little, sun.os.patch.level=unknown, env.HOME=/Users/santanudey, java.io.tmpdir=/var/folders/4q/2wkj_1v96wl2_14w18rqyssw0000gn/T/, apigee.org=test-4g, java.vendor.url.bug=http://bugreport.apple.com/, env.SSH_AUTH_SOCK=/tmp/launch-pmgBR8/Listeners, env.COMMAND_MODE=unix2003, mrj.build=11M4107, os.arch=x86_64, java.awt.graphicsenv=apple.awt.CGraphicsEnvironment, env.__array_start=0, java.ext.dirs=/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext, mrj.version=1070.1.6.0_41-445, env.com.apple.java.jvmTask=CommandLine_Manual.java, user.dir=/Users/santanudey/Projects/Training/src/lab01, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, apigee.apiversion=v1, file.encoding=MacRoman, env.JAVA_MAIN_CLASS_2446=org.codehaus.plexus.classworlds.launcher.Launcher, java.specification.version=1.6}
+[WARNING] Using platform encoding (MacRoman actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory apiproxy
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 4 resources
+[DEBUG] file assignPayload.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/policies/assignPayload.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies/assignPayload.xml
+[DEBUG] file default.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/proxies/default.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies/default.xml
+[DEBUG] file simple-stub.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/simple-stub.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/simple-stub.xml
+[DEBUG] file default.xml has a filtered file extension
+[DEBUG] copy /Users/santanudey/Projects/Training/src/lab01/apiproxy/targets/default.xml to /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets/default.xml
+[DEBUG] no use filter components
+[INFO] 
+[INFO] <<< 4G-gateway-maven-build-pack:0.0.9:configure (configure-bundle-step) @ simple-stub <<<
+[INFO] 
+[INFO] --- 4G-gateway-maven-build-pack:0.0.9:configure (configure-bundle-step) @ simple-stub ---
+[DEBUG] Configuring mojo com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:configure from plugin realm ClassRealm[plugin>com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:configure' with basic configurator -->
+[DEBUG]   (f) apiVersion = v1
+[DEBUG]   (f) artifactId = simple-stub
+[DEBUG]   (s) baseDirectory = /Users/santanudey/Projects/Training/src/lab01
+[DEBUG]   (f) buildDirectory = /Users/santanudey/Projects/Training/src/lab01/target
+[DEBUG]   (f) deploymentEnv = test
+[DEBUG]   (f) hostURL = https://api.enterprise.apigee.com
+[DEBUG]   (s) id = test
+[DEBUG]   (f) orgName = test-4g
+[DEBUG]   (f) password = Pg5lzwAyd7
+[DEBUG]   (f) projectName = simple-stub
+[DEBUG]   (f) projectVersion = 1.0
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) userName = dey.santanu@gmail.com
+[DEBUG] -- end configuration --
+15:13:07,179 DEBUG ConfigureMojo:54 - 
+
+=============Now updating the configuration values for the App Bundle================
+
+
+15:13:07,180 DEBUG XMLFileListUtil:125 - =============Searching for XML files in the following directory ================
+/Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies
+15:13:07,180 DEBUG XMLFileListUtil:129 - =============Nuber of files found is================
+1
+15:13:07,182  INFO FileReader:56 - ============= Reading the config file located at ================
+/Users/santanudey/Projects/Training/src/lab01/config.json
+15:13:07,184  INFO PackageConfigurer:60 - =============Replacing config tokens for Environment test, for proxy file name default.xml================
+
+15:13:07,185  INFO PackageConfigurer:173 - ============= to apply the following config tokens ================
+{
+  "name": "default.xml",
+  "tokens": [
+    {
+      "xpath": "/ProxyEndpoint/HTTPProxyConnection/BasePath",
+      "value": "/v1/stub"
+    }
+  ]
+}
+15:13:07,186 DEBUG PackageConfigurer:184 - =============Checking for Xpath Expressions /ProxyEndpoint/HTTPProxyConnection/BasePath  ================
+
+15:13:07,187 DEBUG PackageConfigurer:198 - =============Updated existing value TO_BE_REPLACED to new value /v1/stub ================
+
+15:13:07,188 DEBUG XMLFileListUtil:125 - =============Searching for XML files in the following directory ================
+/Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies
+15:13:07,188 DEBUG XMLFileListUtil:129 - =============Nuber of files found is================
+1
+15:13:07,188 DEBUG XMLFileListUtil:125 - =============Searching for XML files in the following directory ================
+/Users/santanudey/Projects/Training/src/lab01/target/apiproxy/stepdefinitions
+15:13:07,188 DEBUG XMLFileListUtil:131 - =============Error Encountered in Searching files [/Users/santanudey/Projects/Training/src/lab01/target/apiproxy/stepdefinitions]================
+java.lang.NullPointerException
+15:13:07,190  INFO PackageConfigurer:87 - =============Replacing config tokens for Environment test, for policy file name assignPayload.xml================
+
+15:13:07,191  INFO PackageConfigurer:173 - ============= to apply the following config tokens ================
+{
+  "name": "assignPayload.xml",
+  "tokens": [
+    {
+      "xpath": "/AssignMessage/Add/Headers/Header[@name\u003d\u0027TO_BE_REPLACED\u0027]",
+      "value": "max-age\u003d3600"
+    },
+    {
+      "xpath": "/AssignMessage/Add/Headers/Header[@name\u003d\u0027TO_BE_REPLACED\u0027]/@name",
+      "value": "Cache-Control"
+    }
+  ]
+}
+15:13:07,191 DEBUG PackageConfigurer:184 - =============Checking for Xpath Expressions /AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']  ================
+
+15:13:07,193 DEBUG PackageConfigurer:198 - =============Updated existing value TO_BE_REPLACED to new value max-age=3600 ================
+
+15:13:07,193 DEBUG PackageConfigurer:184 - =============Checking for Xpath Expressions /AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name  ================
+
+15:13:07,194 DEBUG PackageConfigurer:198 - =============Updated existing value TO_BE_REPLACED to new value Cache-Control ================
+
+15:13:07,194 DEBUG XMLFileListUtil:125 - =============Searching for XML files in the following directory ================
+/Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets
+15:13:07,194 DEBUG XMLFileListUtil:129 - =============Nuber of files found is================
+1
+15:13:07,196  INFO PackageConfigurer:114 - =============Replacing config tokens for Environment test, for policy file name default.xml================
+
+15:13:07,197  INFO PackageConfigurer:173 - ============= to apply the following config tokens ================
+{
+  "name": "default.xml",
+  "tokens": [
+    {
+      "xpath": "/TargetEndpoint/HTTPTargetConnection/URL",
+      "value": "http://weather.yahooapis.com"
+    }
+  ]
+}
+15:13:07,197 DEBUG PackageConfigurer:184 - =============Checking for Xpath Expressions /TargetEndpoint/HTTPTargetConnection/URL  ================
+
+15:13:07,198 DEBUG PackageConfigurer:198 - =============Updated existing value TO_BE_REPLACED to new value http://weather.yahooapis.com ================
+
+15:13:07,199 DEBUG XMLFileListUtil:125 - =============Searching for XML files in the following directory ================
+/Users/santanudey/Projects/Training/src/lab01/target/apiproxy
+15:13:07,199 DEBUG XMLFileListUtil:129 - =============Nuber of files found is================
+1
+15:13:07,204  INFO ConfigureMojo:83 - 
+
+=============Now zipping the App Bundle================
+
+
+15:13:07,204 DEBUG ZipUtils:63 - Creating : /Users/santanudey/Projects/Training/src/lab01/target/simple-stub1.0-test.zip
+15:13:07,204 DEBUG ZipUtils:78 -  Adding: /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/policies/assignPayload.xml
+15:13:07,205 DEBUG ZipUtils:78 -  Adding: /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/proxies/default.xml
+15:13:07,205 DEBUG ZipUtils:78 -  Adding: /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/simple-stub.xml
+15:13:07,205 DEBUG ZipUtils:78 -  Adding: /Users/santanudey/Projects/Training/src/lab01/target/apiproxy/targets/default.xml
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ simple-stub ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-install-plugin:2.3.1:install from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-install-plugin:2.3.1, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-install-plugin:2.3.1:install' with basic configurator -->
+[DEBUG]   (f) artifact = apigee-training-labs:simple-stub:pom:1.0
+[DEBUG]   (f) attachedArtifacts = []
+[DEBUG]   (f) createChecksum = false
+[DEBUG]   (f) localRepository =        id: local
+      url: file:///Users/santanudey/.m2/repository/
+   layout: none
+
+[DEBUG]   (f) packaging = pom
+[DEBUG]   (f) pomFile = /Users/santanudey/Projects/Training/src/lab01/pom.xml
+[DEBUG]   (f) updateReleaseInfo = false
+[DEBUG] -- end configuration --
+[INFO] Installing /Users/santanudey/Projects/Training/src/lab01/pom.xml to /Users/santanudey/.m2/repository/apigee-training-labs/simple-stub/1.0/simple-stub-1.0.pom
+[DEBUG] Installing apigee-training-labs:simple-stub/maven-metadata.xml to /Users/santanudey/.m2/repository/apigee-training-labs/simple-stub/maven-metadata-local.xml
+[INFO] 
+[INFO] <<< 4G-gateway-maven-build-pack:0.0.9:deploy (install-bundle-step) @ simple-stub <<<
+[INFO] 
+[INFO] --- 4G-gateway-maven-build-pack:0.0.9:deploy (install-bundle-step) @ simple-stub ---
+[DEBUG] Configuring mojo com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:deploy from plugin realm ClassRealm[plugin>com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9, parent: sun.misc.Launcher$AppClassLoader@69cd2e5f]
+[DEBUG] Configuring mojo 'com.apigee.build-tools.enterprise4g:4G-gateway-maven-build-pack:0.0.9:deploy' with basic configurator -->
+[DEBUG]   (f) apiVersion = v1
+[DEBUG]   (f) artifactId = simple-stub
+[DEBUG]   (s) baseDirectory = /Users/santanudey/Projects/Training/src/lab01
+[DEBUG]   (f) buildDirectory = /Users/santanudey/Projects/Training/src/lab01/target
+[DEBUG]   (f) deploymentEnv = test
+[DEBUG]   (f) hostURL = https://api.enterprise.apigee.com
+[DEBUG]   (s) id = test
+[DEBUG]   (f) orgName = test-4g
+[DEBUG]   (f) password = Pg5lzwAyd7
+[DEBUG]   (f) projectName = simple-stub
+[DEBUG]   (f) projectVersion = 1.0
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) userName = dey.santanu@gmail.com
+[DEBUG] -- end configuration --
+15:13:07,211  INFO DeployMojo:58 - 
+
+=============Now Installing the App Bundle================
+/Users/santanudey/Projects/Training/src/lab01/target/simple-stub1.0-test.zip
+15:13:07,230 DEBUG RestUtil:273 - URL parameters API Versionv1
+15:13:07,230 DEBUG RestUtil:274 - URL parameters URL https://api.enterprise.apigee.com
+15:13:07,230 DEBUG RestUtil:275 - URL parameters Orgtest-4g
+15:13:07,230 DEBUG RestUtil:276 - URL parameters App simple-stub
+15:13:07,252  INFO RestUtil:290 - 
+Complete request
+POST https://api.enterprise.apigee.com/v1/organizations/test-4g/apis?action=import&name=simple-stub
+ accept: application/json
+accept-encoding: gzip
+authorization: Basic ZGV5LnNhbnRhbnVAZ21haWwuY29tOlBnNWx6d0F5ZDc=
+15:13:09,927  INFO RestUtil:302 - 
+Complete response
+accept-encoding: gzip
+content-length: 693
+content-type: application/json
+date: Wed, 27 Mar 2013 09:43:09 GMT
+connection: [keep-alive]
+ {
+  "configurationVersion": {
+    "majorVersion": 4,
+    "minorVersion": 0
+  },
+  "contextInfo": "Revision 34 of application simple-stub, in organization test-4g",
+  "createdAt": 1364377388976,
+  "createdBy": "dey.santanu@gmail.com",
+  "lastModifiedAt": 1364377388976,
+  "lastModifiedBy": "dey.santanu@gmail.com",
+  "policies": [
+    "assignPayload"
+  ],
+  "proxyEndpoints": [
+    "default"
+  ],
+  "resources": [],
+  "revision": "34",
+  "targetEndpoints": [
+    "default"
+  ],
+  "targetServers": [],
+  "type": "Application"
+}
+15:13:09,928  INFO DeployMojo:67 - 
+
+=============Now Activating the App Bundle================
+
+
+15:13:09,928  INFO RestUtil:239 - 
+Complete request
+GET https://api.enterprise.apigee.com/v1/organizations/test-4g/apis/simple-stub/deployments
+ accept: application/json
+accept-encoding: gzip
+authorization: Basic ZGV5LnNhbnRhbnVAZ21haWwuY29tOlBnNWx6d0F5ZDc=
+15:13:10,719  INFO RestUtil:250 - 
+Complete response
+accept-encoding: gzip
+content-length: 1085
+content-type: application/json
+date: Wed, 27 Mar 2013 09:43:10 GMT
+connection: [keep-alive]
+ {
+  "environment": [
+    {
+      "name": "test",
+      "revision": [
+        {
+          "configuration": {
+            "basePath": "/",
+            "steps": []
+          },
+          "name": "33",
+          "server": [
+            {
+              "status": "deployed",
+              "type": [
+                "message-processor"
+              ],
+              "uUID": "e6f83b53-8ab1-4325-bb77-df1bc4df8d59"
+            },
+            {
+              "status": "deployed",
+              "type": [
+                "message-processor"
+              ],
+              "uUID": "8a4549fe-ceff-44cf-967f-ab4a500a0479"
+            },
+            {
+              "status": "deployed",
+              "type": [
+                "router"
+              ],
+              "uUID": "c0b782f2-ccb6-4984-a0c0-0ac1db60a039"
+            },
+            {
+              "status": "deployed",
+              "type": [
+                "router"
+              ],
+              "uUID": "38f80c53-a22b-4427-ab95-a178482daa6b"
+            },
+            {
+              "status": "deployed",
+              "type": [
+                "router"
+              ],
+              "uUID": "28d847a2-5bfd-404d-985d-33d079d691d9"
+            },
+            {
+              "status": "deployed",
+              "type": [
+                "router"
+              ],
+              "uUID": "807be0c7-dcc7-4be4-9d1e-30d26fa5519c"
+            }
+          ],
+          "state": "deployed"
+        }
+      ]
+    }
+  ],
+  "name": "simple-stub",
+  "organization": "test-4g"
+}
+15:13:10,720  INFO RestUtil:322 - De-activating Version: 33 For Env Profile: test
+15:13:12,766  INFO RestUtil:353 - 
+Complete request
+POST https://api.enterprise.apigee.com/v1/organizations/test-4g/apis/simple-stub/revisions/33/deployments?action=undeploy&env=test
+ accept: application/json
+accept-encoding: gzip
+authorization: Basic ZGV5LnNhbnRhbnVAZ21haWwuY29tOlBnNWx6d0F5ZDc=
+content-type: application/octet-stream
+15:13:12,770  INFO RestUtil:360 - 
+Complete response
+accept-encoding: gzip
+content-length: 948
+content-type: application/json
+date: Wed, 27 Mar 2013 09:43:12 GMT
+connection: [keep-alive]
+ {
+  "aPIProxy": "simple-stub",
+  "configuration": {
+    "basePath": "/",
+    "steps": []
+  },
+  "environment": "test",
+  "name": "33",
+  "organization": "test-4g",
+  "revision": "33",
+  "state": "undeployed",
+  "server": [
+    {
+      "status": "undeployed",
+      "type": [
+        "message-processor"
+      ],
+      "uUID": "e6f83b53-8ab1-4325-bb77-df1bc4df8d59"
+    },
+    {
+      "status": "undeployed",
+      "type": [
+        "message-processor"
+      ],
+      "uUID": "8a4549fe-ceff-44cf-967f-ab4a500a0479"
+    },
+    {
+      "status": "undeployed",
+      "type": [
+        "router"
+      ],
+      "uUID": "c0b782f2-ccb6-4984-a0c0-0ac1db60a039"
+    },
+    {
+      "status": "undeployed",
+      "type": [
+        "router"
+      ],
+      "uUID": "38f80c53-a22b-4427-ab95-a178482daa6b"
+    },
+    {
+      "status": "undeployed",
+      "type": [
+        "router"
+      ],
+      "uUID": "28d847a2-5bfd-404d-985d-33d079d691d9"
+    },
+    {
+      "status": "undeployed",
+      "type": [
+        "router"
+      ],
+      "uUID": "807be0c7-dcc7-4be4-9d1e-30d26fa5519c"
+    }
+  ]
+}
+15:13:12,771  INFO RestUtil:377 - undeployed
+15:13:12,771  INFO RestUtil:399 - 
+Complete request
+POST https://api.enterprise.apigee.com/v1/organizations/test-4g/apis/simple-stub/revisions/34/deployments?action=deploy&env=test
+ accept: application/json
+accept-encoding: gzip
+authorization: Basic ZGV5LnNhbnRhbnVAZ21haWwuY29tOlBnNWx6d0F5ZDc=
+content-type: application/octet-stream
+15:13:15,073  INFO RestUtil:408 - 
+Complete response
+accept-encoding: gzip
+content-length: 934
+content-type: application/json
+date: Wed, 27 Mar 2013 09:43:14 GMT
+connection: [keep-alive]
+ {
+  "aPIProxy": "simple-stub",
+  "configuration": {
+    "basePath": "/",
+    "steps": []
+  },
+  "environment": "test",
+  "name": "34",
+  "organization": "test-4g",
+  "revision": "34",
+  "state": "deployed",
+  "server": [
+    {
+      "status": "deployed",
+      "type": [
+        "message-processor"
+      ],
+      "uUID": "e6f83b53-8ab1-4325-bb77-df1bc4df8d59"
+    },
+    {
+      "status": "deployed",
+      "type": [
+        "message-processor"
+      ],
+      "uUID": "8a4549fe-ceff-44cf-967f-ab4a500a0479"
+    },
+    {
+      "status": "deployed",
+      "type": [
+        "router"
+      ],
+      "uUID": "c0b782f2-ccb6-4984-a0c0-0ac1db60a039"
+    },
+    {
+      "status": "deployed",
+      "type": [
+        "router"
+      ],
+      "uUID": "38f80c53-a22b-4427-ab95-a178482daa6b"
+    },
+    {
+      "status": "deployed",
+      "type": [
+        "router"
+      ],
+      "uUID": "28d847a2-5bfd-404d-985d-33d079d691d9"
+    },
+    {
+      "status": "deployed",
+      "type": [
+        "router"
+      ],
+      "uUID": "807be0c7-dcc7-4be4-9d1e-30d26fa5519c"
+    }
+  ]
+}
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.053s
+[INFO] Finished at: Wed Mar 27 15:13:15 GMT+05:30 2013
+[INFO] Final Memory: 9M/81M
+[INFO] ------------------------------------------------------------------------

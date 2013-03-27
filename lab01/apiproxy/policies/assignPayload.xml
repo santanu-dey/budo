@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="assignPayload">
+	<AssignTo type="response"/>
+	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+	<Set>
+
+		<Payload contentType="applcation/json">
+			{
+				"msg": { "response" : "Sample Response"} 
+			}
+		</Payload>
+		    <StatusCode>200</StatusCode>
+	</Set>
+
+	<Add> 
+		<Headers> 
+			<Header name="TO_BE_REPLACED">TO_BE_REPLACED</Header> 
+			<Header name="Access-Control-Allow-Origin">*</Header> 
+		</Headers> 
+	</Add>
+
+</AssignMessage>

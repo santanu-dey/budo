@@ -1,0 +1,167 @@
+{
+	 "configurations":[
+		{
+			 "name":"prod",
+
+				"policies":[
+					{
+						 "name":"SpikeArrest-11091419259467690.xml",
+						 "tokens":[
+								{
+									 "xpath":"/SpikeArrest/Rate" ,
+										"value":"20ps"
+										}
+						 ]
+					},
+					{
+						 "name":"assignPayload.xml",
+							"tokens":[
+
+												{
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='xyz']" ,
+										"value":"max-age=3600"
+									},
+									
+									{
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='xyz']/@name" ,
+										"value":"Cache-Control"
+								}
+
+													
+								
+						 ]
+					}
+			 ],
+			 "proxies":[
+					{
+						 "name":"default.xml",
+					"tokens":[
+						{
+									 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
+										"value":"/v2/weather"
+										}
+						 ]
+					},
+					{
+						 "name":"xyz-policy",
+					 "tokens":[
+								{
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										},
+								 {
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										}   
+						 ]
+					}
+			 ],
+			 
+				"targets":[
+					{
+						 "name":"default.xml",
+					"tokens":[
+						{
+									 "xpath":"/TargetEndpoint/HTTPTargetConnection/URL" ,
+										"value":"http://apigee.com"
+										}
+						 ]
+					},
+					{
+						 "name":"xyz-policy",
+					 "tokens":[
+								{
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										},
+								 {
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										}   
+						 ]
+					}
+			 ]
+			 
+		},
+	 {
+				"name":"test",
+
+				"policies":[
+						{
+							 "name":"assignPayload.xml",
+							 "tokens":[
+
+									{
+										 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name" ,
+											"value":"Authorization"
+									},
+
+									{
+										 "xpath":"/AssignMessage/Add/Headers/Header[@name='Authorization']" ,
+											"value":"Basic 097809123=="
+											}
+							 ]
+						},
+						{
+							 "name":"xyz.xml",
+								"tokens":[
+									{
+										 "xpath":"/ProxyEndpoint/RouteRule/BasePath" ,
+											"value":"http://yahoo.com"
+											}
+							 ]
+						}
+				 ],
+				 "proxies":[
+						{
+							 "name":"default.xml",
+						"tokens":[
+							{
+										 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
+											"value":"/v3/weather"
+											}
+							 ]
+						},
+						{
+							 "name":"xyz-policy.xml",
+						 "tokens":[
+									{
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											},
+									 {
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											}   
+							 ]
+						}
+				 ],
+				 
+					"targets":[
+						{
+							 "name":"default.xml",
+						"tokens":[
+							{
+										 "xpath":"/TargetEndpoint/HTTPTargetConnection/URL" ,
+											"value":"http://weather.yahooapis.com"
+											}
+							 ]
+						},
+						{
+							 "name":"xyz-policy.xml",
+						 "tokens":[
+									{
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											},
+									 {
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											}   
+							 ]
+						}
+				 ]
+				 
+		}
+	 ]
+}

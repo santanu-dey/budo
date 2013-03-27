@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description>SimpleStub</Description>
+    <FaultRules/>
+
+    <Flows>
+        <Flow name="Lab01-Simple-stub">
+            <Description>stub</Description>
+            <Request>
+
+            </Request>
+            <Response>
+                <Step>
+                    <FaultRules/>
+                    <Name>assignPayload</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;) and (request.verb = &quot;GET&quot;)</Condition> 
+        </Flow>
+    </Flows>
+    
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    
+    <HTTPProxyConnection>
+        <BasePath>TO_BE_REPLACED</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+    </RouteRule>
+
+</ProxyEndpoint> 
