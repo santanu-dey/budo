@@ -4,3 +4,4 @@ target/apiproxy
 target/apiproxy/**
 target/config.json
 target/jmeter
+target/jmeter/**
