@@ -9,9 +9,9 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>apigee-training-labs</groupId>
-	<artifactId>simple-stub</artifactId>
+	<artifactId>default-operation</artifactId>
 	<version>1.0</version>
-	<name>simple-stub</name>
+	<name>default-operation</name>
 	<packaging>pom</packaging>
 
 	<build>
@@ -30,6 +30,7 @@
 					</execution>
 				</executions>
 			</plugin>
+
 
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -64,15 +65,45 @@
 					<skip>false</skip> <!-- Use this module level config to skip module build. Make it true -->
 				</configuration>
 				<executions>
-			    <execution>
-		        <id>configure-bundle-step</id>
-		        <phase>package</phase>
-		        <goals>
-		       		<goal>configure</goal>
-		        </goals>
-			    </execution>
-		     </executions>
+					<execution>
+						<id>configure-bundle-step</id>
+						<phase>package</phase>
+						<goals>
+							<goal>configure</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>install-bundle-step</id>
+						<phase>install</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
+
+
+			<plugin>
+				<groupId>com.lazerycode.jmeter</groupId>
+				<artifactId>jmeter-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>jmeter-tests</id>
+						<phase>install</phase>
+						<goals>
+							<goal>jmeter</goal>
+						</goals>
+						<configuration>
+							<skipTests>false</skipTests>
+                        	<ignoreResultFailures>false</ignoreResultFailures>
+                        	<suppressJMeterOutput>false</suppressJMeterOutput>
+<!-- 							<jmeterUserProperties>
+								for user properites 
+							</jmeterUserProperties> -->
+						</configuration>
+					</execution>
+				</executions>
+			</plugin> 
 
 		</plugins>
 	</build>

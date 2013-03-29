@@ -2,11 +2,12 @@
 <ProxyEndpoint name="default">
     <Description>SimpleStub</Description>
     <FaultRules/>
+
     <Flows>
-        <Flow name="simple-stub">
+        <Flow name="Lab02-Simple-Stub">
             <Description>stub</Description>
             <Request>
-                
+
             </Request>
             <Response>
                 <Step>
@@ -16,26 +17,52 @@
             </Response>
             <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;) and (request.verb = &quot;GET&quot;)</Condition> 
         </Flow>
+        <Flow name="Lab02-Default-Operation">
+            <Description>Bad requests</Description>
+            <Request>
+            </Request>
+            <Response>
+                <Step>
+                    <FaultRules/>
+                    <Name>handleBadRequest</Name>
+                </Step>
+            </Response>
+        </Flow>
     </Flows>
+    
     <PreFlow name="PreFlow">
         <Request/>
         <Response/>
     </PreFlow>
+
+
+
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    
+
+<!--     This is not getting executed for not allowed HTTP method. Dead code -->
+    <DefaultFaultRule name="DefaultFaultRule">
+        <Step>
+            <Name>handleDefaultError</Name>
+            <!-- <Condition>fault.category = "Messaging"</Condition>   -->
+        </Step>
+        <AlwaysEnforce>true</AlwaysEnforce>
+    </DefaultFaultRule> 
+ 
+
     <HTTPProxyConnection>
         <BasePath>TO_BE_REPLACED</BasePath>
-        <Properties/>
+        <Properties>
+            <Property name="allow.http.method.LINK">true</Property>
+            <Property name="allow.http.method.UNLINK">true</Property>
+            <Property name="allow.http.method.PURGE">true</Property>
+        </Properties>
         <VirtualHost>default</VirtualHost>
-        <!--    <VirtualHost>secure</VirtualHost> -->
     </HTTPProxyConnection>
-<!--     <RouteRule name="default">
-        <TargetEndpoint>default</TargetEndpoint>
-    </RouteRule> -->
-
     <RouteRule name="default">
-        <!-- <URL>http://stubit.raremile.com/stub/1327983465012/devices</URL> -->
     </RouteRule>
-    
+
 </ProxyEndpoint> 
-
-
-

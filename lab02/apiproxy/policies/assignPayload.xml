@@ -2,19 +2,25 @@
 <AssignMessage name="assignPayload">
 	<AssignTo type="response"/>
 	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+	
+	<Remove>
+		<!-- idea is to remove all conent from the incoming request -->
+	</Remove>
 	<Set>
 
-		<Payload contentType="applcation/json">
-			&nbsp; &nbsp;{&quot;msg&quot;: { &quot;response&quot; : &quot;Smaple Response.&quot;} }
-		</Payload>
+		<Payload contentType="applcation/json"><![CDATA[
+			{
+				"msg": { "Response" : "Sample Response"} 
+			}
+		]]></Payload>
 		    <StatusCode>200</StatusCode>
 	</Set>
+
+
 
 	<Add> 
 		<Headers> 
 			<Header name="TO_BE_REPLACED">TO_BE_REPLACED</Header> 
-		</Headers> 
-		<Headers> 
 			<Header name="Access-Control-Allow-Origin">*</Header> 
 		</Headers> 
 	</Add>

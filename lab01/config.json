@@ -38,7 +38,7 @@
 					"tokens":[
 						{
 									 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
-										"value":"/v2/weather"
+										"value":"/v2/stub"
 										}
 						 ]
 					},

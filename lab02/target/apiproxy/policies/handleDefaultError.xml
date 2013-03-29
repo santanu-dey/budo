@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault enabled="true" continueOnError="false" async="false" name="handleDefaultError">
+    <DisplayName>Default Messaging Fault</DisplayName>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <FaultRules/>
+    <Properties/>
+    <FaultResponse>
+		<Add>
+	        <Headers>
+	        <Header name="Response-Code">400</Header>
+	        <Header name="Response-Message">Invalid Request</Header>
+	        </Headers>
+	    </Add>
+	    <Set>
+            <Payload contentType="application/json">
+              {
+               "ErrorResponse" :
+                {
+                 "Error" :
+                 { "Status" : "400","Message" : "Message  Processing Error. Invalid HTTP Message" }
+                }
+               }
+            </Payload>
+            <StatusCode>400</StatusCode>
+            <ReasonPhrase>Invalid Request</ReasonPhrase>
+	    </Set>
+    </FaultResponse>
+</RaiseFault>

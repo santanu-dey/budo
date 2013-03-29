@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><AssignMessage name="assignPayload">
+	<AssignTo type="response"/>
+	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+	
+	<Remove>
+		<!-- idea is to remove all conent from the incoming request -->
+	</Remove>
+	<Set>
+
+		<Payload contentType="applcation/json"><![CDATA[
+			{
+				"msg": { "Response" : "Sample Response"} 
+			}
+		]]></Payload>
+		    <StatusCode>200</StatusCode>
+	</Set>
+
+
+
+	<Add> 
+		<Headers> 
+			<Header name="Cache-Control">max-age=3600</Header> 
+			<Header name="Access-Control-Allow-Origin">*</Header> 
+		</Headers> 
+	</Add>
+
+</AssignMessage>
