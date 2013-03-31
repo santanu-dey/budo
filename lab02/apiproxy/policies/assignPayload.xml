@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AssignMessage name="assignPayload">
+<AssignMessage name="assignPayload">  <!-- Note: The policy name and file name should match. -->
 	<AssignTo type="response"/>
 	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
 	
@@ -13,7 +13,8 @@
 				"msg": { "Response" : "Sample Response"} 
 			}
 		]]></Payload>
-		    <StatusCode>200</StatusCode>
+		<!--     <StatusCode>200</StatusCode> -->
+<!-- 		<ReasonPhrase>OK</ReasonPhrase>  --> <!-- This is optional -->
 	</Set>
 
 

@@ -43,10 +43,10 @@
     </PostFlow>
     
 
-<!--     This is not getting executed for not allowed HTTP method. Dead code -->
+<!--  Need a fault to enter this part of the code -->
     <DefaultFaultRule name="DefaultFaultRule">
         <Step>
-            <Name>handleDefaultError</Name>
+            <Name>handleBackendError</Name>
             <!-- <Condition>fault.category = "Messaging"</Condition>   -->
         </Step>
         <AlwaysEnforce>true</AlwaysEnforce>
@@ -62,7 +62,9 @@
         </Properties>
         <VirtualHost>default</VirtualHost>
     </HTTPProxyConnection>
+    
     <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
     </RouteRule>
 
 </ProxyEndpoint> 

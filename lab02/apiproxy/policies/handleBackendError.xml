@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<RaiseFault enabled="true" continueOnError="false" async="false" name="handleDefaultError">
+<RaiseFault enabled="true" continueOnError="false" async="false" name="handleBackendError">
     <DisplayName>Default Messaging Fault</DisplayName>
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
     <FaultRules/>
@@ -13,13 +13,9 @@
 	    </Add>
 	    <Set>
             <Payload contentType="application/json">
-              {
-               "ErrorResponse" :
-                {
-                 "Error" :
-                 { "Status" : "400","Message" : "Message  Processing Error. Invalid HTTP Message" }
-                }
-               }
+            {
+                "Message": { "Error" : "Backend returned error"} 
+            }
             </Payload>
             <StatusCode>400</StatusCode>
             <ReasonPhrase>Invalid Request</ReasonPhrase>
