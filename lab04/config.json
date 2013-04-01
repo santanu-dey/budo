@@ -1,0 +1,167 @@
+{
+	 "configurations":[
+		{
+			 "name":"prod",
+
+				"policies":[
+					{
+						 "name":"SpikeArrest.xml",
+						 "tokens":[
+								{
+									 "xpath":"/SpikeArrest/Rate" ,
+										"value":"20ps"
+										}
+						 ]
+					},
+					{
+						 "name":"assignPayload.xml",
+							"tokens":[
+
+												{
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']" ,
+										"value":"max-age=3600"
+									},
+									
+									{
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name" ,
+										"value":"Cache-Control"
+								}
+
+													
+								
+						 ]
+					}
+			 ],
+			 "proxies":[
+					{
+						 "name":"default.xml",
+					"tokens":[
+						{
+									 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
+										"value":"/v2/protection"
+										}
+						 ]
+					},
+					{
+						 "name":"xyz-policy",
+					 "tokens":[
+								{
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										},
+								 {
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										}   
+						 ]
+					}
+			 ],
+			 
+				"targets":[
+					{
+						 "name":"default.xml",
+					"tokens":[
+						{
+									 "xpath":"/TargetEndpoint/HTTPTargetConnection/URL" ,
+										"value":"http://training-backendservice.rhcloud.com/server2/echo.jsp"
+										}
+						 ]
+					},
+					{
+						 "name":"xyz-policy",
+					 "tokens":[
+								{
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										},
+								 {
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										}   
+						 ]
+					}
+			 ]
+			 
+		},
+	 {
+				"name":"test",
+
+				"policies":[
+						{
+							 "name":"SpikeArrest.xml",
+							 "tokens":[
+
+									{
+									 "xpath":"/SpikeArrest/Rate" ,
+										"value":"2pm"
+									},
+									
+									{
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name" ,
+										"value":"Cache-Control"
+									}
+							 ]
+						},
+						{
+							 "name":"xyz.xml",
+								"tokens":[
+									{
+										 "xpath":"/ProxyEndpoint/RouteRule/BasePath" ,
+											"value":"http://yahoo.com"
+											}
+							 ]
+						}
+				 ],
+				 "proxies":[
+						{
+							 "name":"default.xml",
+						"tokens":[
+							{
+										 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
+											"value":"/v1/protection"
+											}
+							 ]
+						},
+						{
+							 "name":"xyz-policy.xml",
+						 "tokens":[
+									{
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											},
+									 {
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											}   
+							 ]
+						}
+				 ],
+				 
+					"targets":[
+						{
+							 "name":"default.xml",
+						"tokens":[
+							{
+										 "xpath":"/TargetEndpoint/HTTPTargetConnection/URL" ,
+											"value":"http://training-backendservice.rhcloud.com/server1/echo.jsp"
+											}
+							 ]
+						},
+						{
+							 "name":"xyz-policy.xml",
+						 "tokens":[
+									{
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											},
+									 {
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											}   
+							 ]
+						}
+				 ]
+				 
+		}
+	 ]
+}

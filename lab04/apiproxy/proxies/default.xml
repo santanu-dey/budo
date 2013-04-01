@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProxyEndpoint name="default">
+	<Flows>
+		<Flow name="Lab04-Protection">
+			<Request>
+				<Step>
+					<FaultRules/>
+					<Name>SpikeArrest</Name>
+				</Step>
+			</Request>
+			<Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;)</Condition> 
+			<Response/>
+		</Flow>	
+	</Flows>
+
+	<PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+
+
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+
+    <HTTPProxyConnection>
+    	<BasePath>TO_BE_REPLACED</BasePath>
+	 </HTTPProxyConnection>
+
+	 <RouteRule name="default">
+	 	<TargetEndpoint>default</TargetEndpoint>
+	 </RouteRule>
+
+</ProxyEndpoint>

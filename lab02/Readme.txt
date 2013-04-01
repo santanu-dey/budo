@@ -8,3 +8,13 @@ This lab demonstrates
     4. Removes all content and header from incoming request.
     5. Demonstrates how the backend error's are captured in a default fault policy
 
+    Test with 
+    	curl -v http://test-4g-test.apigee.net/v1/default-operation/ 
+    	curl -v http://test-4g-test.apigee.net/v1/default-operation/test -data "some data"
+
+    Shows different version of API running on test environment / vs. Prod environment
+
+    For production environment the URL will be different
+    	curl -v http://test-4g-prod.apigee.net/v2/default-operation/ 
+    	curl -v http://test-4g-prod.apigee.net/v2/default-operation/test -data "some data"
+

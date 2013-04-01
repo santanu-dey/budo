@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProxyEndpoint name="default">
+
+	<Flows>
+		<Flow name="Lab03-Fault-Demo">
+			<Description>This flow raises fault</Description>
+			  <Request>
+			  	<Step>
+                    <FaultRules/>
+                    <Condition>(request.verb := &quot;GET&quot;)</Condition> <!-- Conditions are  optional -->
+                    <Name>RaiseFaultForGet</Name> <!-- This policy will raise faults based on some conditions -->
+	             </Step>
+                 <Step>
+                    <FaultRules/>
+                    <Condition>(request.verb := &quot;POST&quot;)</Condition> <!-- Conditions are  optional -->
+                    <Name>RaiseFaultForPost</Name> <!-- This policy will raise faults based on some conditions -->
+                 </Step>
+	          </Request>
+	          <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;)</Condition> 
+		</Flow>
+	</Flows>
+
+	<PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+
+
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+
+    <HTTPProxyConnection>
+    	<BasePath>TO_BE_REPLACED</BasePath>
+    </HTTPProxyConnection>
+
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+
+</ProxyEndpoint>

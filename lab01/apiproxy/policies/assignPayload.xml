@@ -6,7 +6,7 @@
 
 		<Payload contentType="applcation/json">
 			{
-				"msg": { "response" : "Sample Response"} 
+				"msg": { "response" : "Hello World"} 
 			}
 		</Payload>
 		    <StatusCode>200</StatusCode>

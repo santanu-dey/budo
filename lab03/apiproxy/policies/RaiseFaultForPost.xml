@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RaiseFaultForPost">
+    <DisplayName>Raise Custom Fault</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="application/json"><![CDATA[
+
+				{
+				    "MyMessage": {
+				        "Error": "My Custom Fault for POST requests"
+				    }
+				}
+					]]>
+			</Payload>
+            <StatusCode>501</StatusCode>
+            <ReasonPhrase>Not Implementedt</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>
