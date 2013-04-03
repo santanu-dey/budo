@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Quota async="false" continueOnError="false" enabled="true" name="QuotaPolicy"> 
+    <DisplayName>QuotaPolicy</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <Allow count="50"/>
+    <Interval>1</Interval>
+    <Distributed>false</Distributed> <!-- Optional -->
+    <Synchronous>false</Synchronous>
+	<Identifier ref="client.ip"/> <!-- Optional. This adds a separate bucket per unique identifier -->-->
+    <TimeUnit>hour</TimeUnit> 
+</Quota>

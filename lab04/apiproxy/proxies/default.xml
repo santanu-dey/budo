@@ -5,12 +5,29 @@
 			<Request>
 				<Step>
 					<FaultRules/>
+					<Condition>(message.queryparams.count = 0)</Condition>
 					<Name>SpikeArrest</Name>
 				</Step>
+				<Step>
+					<FaultRules/>
+					<Condition>(message.queryparams.count > 0)</Condition>
+					<Name>QuotaPolicy</Name>
+				</Step>
 			</Request>
-			<Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;)</Condition> 
+			<Condition><![CDATA[(proxy.pathsuffix MatchesPath "/**") and (message.queryparam.quota <= " ")]]></Condition> 
 			<Response/>
 		</Flow>	
+
+		<Flow name="Lab04-ResetQuota">
+				<Request>
+					<Step>
+						<FaultRules/>
+						<Name>ResetQuota</Name>
+					</Step>
+				</Request>
+				<Condition><![CDATA[(proxy.pathsuffix MatchesPath "/**") and (message.queryparam.quota = "reset")]]></Condition> 
+				<Response/>
+			</Flow>	
 	</Flows>
 
 	<PreFlow name="PreFlow">

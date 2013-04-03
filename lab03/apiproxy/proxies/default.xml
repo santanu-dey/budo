@@ -3,20 +3,20 @@
 
 	<Flows>
 		<Flow name="Lab03-Fault-Demo">
-			<Description>This flow raises fault</Description>
-			  <Request>
-			  	<Step>
+            <Description>This flow raises fault</Description>
+            <Request>
+        	  	<Step>
                     <FaultRules/>
                     <Condition>(request.verb := &quot;GET&quot;)</Condition> <!-- Conditions are  optional -->
                     <Name>RaiseFaultForGet</Name> <!-- This policy will raise faults based on some conditions -->
-	             </Step>
-                 <Step>
+                </Step>
+                <Step>
                     <FaultRules/>
                     <Condition>(request.verb := &quot;POST&quot;)</Condition> <!-- Conditions are  optional -->
                     <Name>RaiseFaultForPost</Name> <!-- This policy will raise faults based on some conditions -->
-                 </Step>
-	          </Request>
-	          <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;)</Condition> 
+                </Step>
+            </Request>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;)</Condition> 
 		</Flow>
 	</Flows>
 

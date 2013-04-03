@@ -28,6 +28,8 @@
         <BasePath>TO_BE_REPLACED</BasePath>
         <Properties/>
         <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+        <VirtualHost>TestVH8080</VirtualHost>
     </HTTPProxyConnection>
     <RouteRule name="default">
     </RouteRule>

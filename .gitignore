@@ -1,7 +1,10 @@
-tartget/*zip
 *.jtl
+*.class
+*.zip
+tartget/**zip
+tartget/**jar
 target/apiproxy
-target/apiproxy/**
+target/apiproxy/*
 target/config.json
 target/jmeter
-target/jmeter/**
+target/jmeter/*

@@ -1,0 +1,9 @@
+<ResponseCache name="cacheResponse">
+	<CacheResource>SimpleCache</CacheResource> <!-- This is optional. If we skip this resource then a default resource will be used. -->
+    <CacheKey>
+        <KeyFragment ref="request.queryparam.cacheKey"/>
+    </CacheKey>
+    <ExpirySettings>
+        <TimeoutInSec>6000</TimeoutInSec>
+    </ExpirySettings>
+</ResponseCache>

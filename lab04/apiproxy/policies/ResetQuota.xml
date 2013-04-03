@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ResetQuota async="false" continueOnError="false" enabled="false" name="ResetQuota"> <!-- Not working in R21.2 https://apigeesc.atlassian.net/browse/BID-3308 -->
+    <DisplayName>ResetQuota</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <Quota name="QuotaPolicy"> <!-- Name must be same as the Quota policy name -->
+       <!--  <Identifier name="identifierName" ref="request.header.identifier"> -->
+       		<Identifier name="_default"> <!-- Restes all counts -->
+            <Allow>50</Allow>
+        </Identifier>
+    </Quota>
+</ResetQuota>
