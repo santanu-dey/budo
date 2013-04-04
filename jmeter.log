@@ -135,3 +135,17 @@
 2013/04/01 22:32:11 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
 2013/04/01 22:32:11 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
 2013/04/01 22:32:11 INFO  - jmeter.engine.StandardJMeterEngine: Test has ended on host null 
+2013/04/04 12:07:15 INFO  - jmeter.gui.action.Load: Loading file: /Users/santanudey/Projects/Training/src/lab06/tests/get-call.jmx 
+2013/04/04 12:07:15 INFO  - jmeter.services.FileServer: Set new base='/Users/santanudey/Projects/Training/src/lab06/tests' 
+2013/04/04 12:07:15 INFO  - jmeter.services.FileServer: Set new base='/Users/santanudey/Projects/Training/src/lab06/tests' 
+2013/04/04 12:07:50 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/04/04 12:07:50 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/04/04 12:07:50 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Thread Group. 
+2013/04/04 12:07:50 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/04/04 12:07:50 INFO  - jmeter.engine.StandardJMeterEngine: All threads have been started 
+2013/04/04 12:07:50 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-1 
+2013/04/04 12:07:52 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-1 
+2013/04/04 12:07:52 INFO  - jmeter.engine.StandardJMeterEngine: Ending thread Thread Group 1-1 
+2013/04/04 12:07:52 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/04/04 12:07:52 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2013/04/04 12:07:52 INFO  - jmeter.engine.StandardJMeterEngine: Test has ended on host null 
