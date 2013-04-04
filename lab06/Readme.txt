@@ -9,3 +9,4 @@ In this process this lab demonstrates a few salient features:
 
 1. json path extraction
 2. json to xml conversion
+3. conditionally returning XML / json response

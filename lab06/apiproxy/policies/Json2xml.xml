@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <JSONToXML async="false" continueOnError="false" enabled="true" name="Json2xml">
     <DisplayName>JSON to XML</DisplayName>
+    <!-- <Format>yahoo</Format> -->
     <FaultRules/>
     <Properties/>
-    <Options/>
+    <Source>response</Source>
+    <OutputVariable>response</OutputVariable>
+    <Options>
+    <ArrayRootElementName>Movies</ArrayRootElementName>
+    <ArrayItemElementName>Movie</ArrayItemElementName>
+    
+    </Options> 
+
 <!--     <Options>
         <NullValue>NULL</NullValue>
         <NamespaceBlockName>#namespaces</NamespaceBlockName>

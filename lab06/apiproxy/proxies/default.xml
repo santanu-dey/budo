@@ -2,7 +2,7 @@
 <ProxyEndpoint name="default">
 	<Flows>
 		<Flow name="Lab06-service-callout">
-			<Description>This flow demonstrates caching</Description>
+			<Description>This flow demonstrates service callout</Description>
 			<Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;)</Condition>
 			<Request>
         	  	
@@ -22,11 +22,19 @@
             </Request>
 	
 		    <Response>
-		    	<Step>
+                <Step>
                     <FaultRules/>
-                   <!--  <Condition>(request.header.Accept = "application/xml")</Condition> -->
+                    <Name>changeContentType</Name>
+                </Step>
+
+                <Step>
+                    <FaultRules/>
+                    <Condition>(request.header.Accept = "application/xml")</Condition>
                     <Name>Json2xml</Name>
                 </Step>
+
+
+
 		    </Response>
 	
 		</Flow>

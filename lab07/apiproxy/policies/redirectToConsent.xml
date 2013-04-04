@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="redirectToConsent">
+	<AssignTo type="response"/>
+	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+	<Set>
+
+		<!-- <Payload contentType="applcation/json">
+			{
+				"msg": { "response" : "Hello World"} 
+			}
+		</Payload> -->
+		    <StatusCode>302</StatusCode>
+	</Set>
+
+	<Add> 
+		<Headers> 
+			<Header name="Location">http://cosent.url</Header> 
+			<Header name="Access-Control-Allow-Origin">*</Header> 
+		</Headers> 
+	</Add>
+
+</AssignMessage>

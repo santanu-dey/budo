@@ -1,0 +1,161 @@
+{
+	 "configurations":[
+		{
+			 "name":"prod",
+
+				"policies":[
+					{
+						 "name":"getLatestMovie.xml",
+						 "tokens":[
+								{
+									 "xpath":"/ServiceCallout/HTTPTargetConnection/URL" ,
+										"value":"http://api.themoviedb.org/2.1/Movie.getLatest/en/xml/35305ba947070080d6c261bc52100f49"
+										}
+						 ]
+					},
+					{
+						 "name":"assignPayload.xml",
+							"tokens":[
+
+												{
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']" ,
+										"value":"max-age=3600"
+									},
+									
+									{
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name" ,
+										"value":"Cache-Control"
+								}
+
+													
+								
+						 ]
+					}
+			 ],
+			 "proxies":[
+					{
+						 "name":"default.xml",
+					"tokens":[
+						{
+									 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
+										"value":"/v2/getmovie"
+										}
+						 ]
+					},
+					{
+						 "name":"xyz-policy",
+					 "tokens":[
+								{
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										},
+								 {
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										}   
+						 ]
+					}
+			 ],
+			 
+				"targets":[
+					{
+						 "name":"default.xml",
+					"tokens":[
+						{
+									 "xpath":"/TargetEndpoint/HTTPTargetConnection/URL" ,
+										"value":"http://api.themoviedb.org/2.1/Movie.getInfo/en/json/35305ba947070080d6c261bc52100f49/{movieID}"
+										}
+						 ]
+					},
+					{
+						 "name":"xyz-policy",
+					 "tokens":[
+								{
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										},
+								 {
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										}   
+						 ]
+					}
+			 ]
+			 
+		},
+	 {
+				"name":"test",
+
+				"policies":[
+						{
+						 "name":"getLatestMovie.xml",
+						 "tokens":[
+								{
+									 "xpath":"/ServiceCallout/HTTPTargetConnection/URL" ,
+										"value":"http://api.themoviedb.org/2.1/Movie.getLatest/en/xml/35305ba947070080d6c261bc52100f49"
+										}
+						 ]
+					},
+						{
+							 "name":"xyz.xml",
+								"tokens":[
+									{
+										 "xpath":"/ProxyEndpoint/RouteRule/BasePath" ,
+											"value":"http://yahoo.com"
+											}
+							 ]
+						}
+				 ],
+				 "proxies":[
+						{
+							 "name":"default.xml",
+						"tokens":[
+							{
+										 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
+											"value":"/v1/getmovie"
+											}
+							 ]
+						},
+						{
+							 "name":"xyz-policy.xml",
+						 "tokens":[
+									{
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											},
+									 {
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											}   
+							 ]
+						}
+				 ],
+				 
+					"targets":[
+						{
+							 "name":"default.xml",
+						"tokens":[
+							{
+										 "xpath":"/TargetEndpoint/HTTPTargetConnection/URL" ,
+											"value":"http://api.themoviedb.org/2.1/Movie.getInfo/en/json/35305ba947070080d6c261bc52100f49/{movieID}"
+											}
+							 ]
+						},
+						{
+							 "name":"xyz-policy.xml",
+						 "tokens":[
+									{
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											},
+									 {
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											}   
+							 ]
+						}
+				 ]
+				 
+		}
+	 ]
+}

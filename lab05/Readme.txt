@@ -5,6 +5,25 @@ This lab demonstrates caching
 
 Pre-requisites
 	Create a cache resource first.
+	POST 
+	https://api.enterprise.apigee.com/v1/organizations/test-4g/environments/test/caches
+
+	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<Cache name="SimpleCache">
+	    <ExpirySettings>
+	        <TimeoutInSec>9000</TimeoutInSec>
+	    </ExpirySettings>
+	    <Compression>
+	        <MinimumSizeInKB>1024</MinimumSizeInKB>
+	    </Compression>
+	    <Description>Response Cache for Demonstration</Description>
+	    <DiskSizeInMB>0</DiskSizeInMB>
+	    <InMemorySizeInKB>0</InMemorySizeInKB>
+	    <MaxElementsInMemory>5000</MaxElementsInMemory>
+	    <MaxElementsOnDisk>100000</MaxElementsOnDisk>
+	    <OverflowToDisk>true</OverflowToDisk>
+	    <Persistent>true</Persistent>
+	</Cache>
 
 
 Tests 
