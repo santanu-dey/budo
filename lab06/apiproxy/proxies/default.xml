@@ -8,16 +8,24 @@
         	  	
         	  	<Step>
                     <FaultRules/>
+                    <Name>validateAccessToken</Name>
+                </Step>
+
+                <Step>
+                    <FaultRules/>
                     <Name>assignMoviesRequest</Name>
                 </Step>
-        	  	<Step>
+        	  	
+                <Step>
                     <FaultRules/>
                     <Name>getLatestMovie</Name>
                 </Step>
+                
                 <Step>
                     <FaultRules/>
                     <Name>extractMovieID</Name>
                 </Step>
+
 
             </Request>
 	

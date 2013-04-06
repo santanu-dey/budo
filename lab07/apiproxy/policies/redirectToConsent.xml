@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AssignMessage name="redirectToConsent">
-	<AssignTo type="response"/>
+	<AssignTo type="response" createNew="true"/>
 	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+	
+	<Remove>
+		<Payload></Payload>
+	</Remove>
+
 	<Set>
 
 		<!-- <Payload contentType="applcation/json">
@@ -14,7 +19,7 @@
 
 	<Add> 
 		<Headers> 
-			<Header name="Location">http://cosent.url</Header> 
+			<Header name="Location">http://localhost:8080/training/faces/consent/login.jsp</Header> 
 			<Header name="Access-Control-Allow-Origin">*</Header> 
 		</Headers> 
 	</Add>

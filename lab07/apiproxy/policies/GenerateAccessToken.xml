@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<OAuthV2 name="GenerateAccessToken">
+<OAuthV2 name="generateAccessToken">
   <GenerateResponse/>
   <Operation>GenerateAccessToken</Operation>
   <!-- This is in millseconds, so expire in an hour -->
@@ -7,9 +7,9 @@
   <SupportedGrantTypes>
     <GrantType>authorization_code</GrantType>
   </SupportedGrantTypes>
-<GrantType>request.queryparam.grant_type</GrantType>
-<Code>request.queryparam.code</Code>
-<ClientId>request.queryparam.client_id</ClientId>
-<RedirectUri>request.queryparam.redirect_uri</RedirectUri>
-<Scope>request.queryparam.scope</Scope>
+<GrantType>request.formparam.grant_type</GrantType>
+<Code>request.formparam.code</Code>
+<ClientId>request.formparam.client_id</ClientId>
+<RedirectUri>request.formparam.redirect_uri</RedirectUri>
+<Scope>request.formparam.scope</Scope>
 </OAuthV2>

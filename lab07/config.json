@@ -5,11 +5,11 @@
 
 				"policies":[
 					{
-						 "name":"getLatestMovie.xml",
+						 "name":"redirectToConsent.xml",
 						 "tokens":[
 								{
-									 "xpath":"/ServiceCallout/HTTPTargetConnection/URL" ,
-										"value":"http://api.themoviedb.org/2.1/Movie.getLatest/en/xml/35305ba947070080d6c261bc52100f49"
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='Location']" ,
+										"value":"http://training-backendservice.rhcloud.com/faces/consent/login.jsp"
 										}
 						 ]
 					},
@@ -38,7 +38,7 @@
 					"tokens":[
 						{
 									 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
-										"value":"/v2/getmovie"
+										"value":"/v2/oauth"
 										}
 						 ]
 					},
@@ -88,11 +88,11 @@
 
 				"policies":[
 						{
-						 "name":"getLatestMovie.xml",
+						 "name":"redirectToConsent.xml",
 						 "tokens":[
 								{
-									 "xpath":"/ServiceCallout/HTTPTargetConnection/URL" ,
-										"value":"http://api.themoviedb.org/2.1/Movie.getLatest/en/xml/35305ba947070080d6c261bc52100f49"
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='Location']" ,
+										"value":"http://localhost:8080/training/faces/consent/login.jsp"
 										}
 						 ]
 					},
@@ -112,7 +112,7 @@
 						"tokens":[
 							{
 										 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
-											"value":"/v1/getmovie"
+											"value":"/v2/oauth"
 											}
 							 ]
 						},
