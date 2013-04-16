@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APIProxy revision="1" name="analytics-collection">
+	<Description>Lab06 - to demonstrate service call out</Description>
+</APIProxy>

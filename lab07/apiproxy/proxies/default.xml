@@ -56,6 +56,25 @@
             <Condition>(proxy.pathsuffix MatchesPath &quot;/accesstoken&quot;) and (request.verb = &quot;POST&quot;)</Condition>
         </Flow>
 
+        <Flow name="Lab07-GenerateAccessToken">
+            <Description>This flow is for Access token generation</Description>
+            
+            <Request>
+                <Step>
+                    <FaultRules/>
+                    <Name>generateRefreshToken</Name>
+                </Step>
+            </Request>
+
+            <Response>
+            
+            </Response>
+            
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/refreshtoken&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+        </Flow>
+
+
+
         <Flow name="Lab02-Default-Operation">
             <Description>Bad requests</Description>
             <Request>

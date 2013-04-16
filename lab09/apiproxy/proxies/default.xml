@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProxyEndpoint name="default">
+	<Flows>
+		<Flow name="Lab09-analytics-cllection">
+			<Description>This flow demonstrates service callout</Description>
+			<Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;)</Condition>
+			<Request>
+
+                <Step>
+                    <FaultRules/>
+                    <Name>assignMoviesRequest</Name>
+                </Step>
+        	  	
+                <Step>
+                    <FaultRules/>
+                    <Name>getLatestMovie</Name>
+                </Step>
+                
+                <Step>
+                    <FaultRules/>
+                    <Name>extractMovieID</Name>
+                </Step>
+
+
+            </Request>
+	
+		    <Response>
+                <Step>
+                    <FaultRules/>
+                    <Name>changeContentType</Name>
+                </Step>
+                <Step>
+                    <FaultRules/>
+                    <Name>extractMovieInfo</Name>
+                </Step>
+
+                <Step>
+                    <FaultRules/>
+                    <Name>collectAnalytics</Name>
+                </Step>
+
+
+
+		    </Response>
+	
+		</Flow>
+
+	</Flows>
+
+	<PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+
+
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+
+    <HTTPProxyConnection>
+    	<BasePath>TO_BE_REPLACED</BasePath>
+	 </HTTPProxyConnection>
+
+	 <RouteRule name="default">
+	 	<TargetEndpoint>default</TargetEndpoint>
+	 </RouteRule>
+</ProxyEndpoint>

@@ -95,7 +95,7 @@
 						</goals>
 						<configuration>
 							<skipTests>false</skipTests>
-                        	<ignoreResultFailures>false</ignoreResultFailures>
+                        	<ignoreResultFailures>true</ignoreResultFailures>
                         	<suppressJMeterOutput>false</suppressJMeterOutput>
 <!-- 							<jmeterUserProperties>
 								for user properites 

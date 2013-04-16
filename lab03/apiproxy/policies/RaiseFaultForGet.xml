@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<RaiseFault async="false" continueOnError="false" enabled="true" name="RaiseFaultForGet">
+<RaiseFault async="false" continueOnError="false" enabled="true" name="raiseFaultForGet">
     <DisplayName>Raise Custom Fault</DisplayName>
     <FaultRules/>
     <Properties/>
@@ -16,7 +16,7 @@
 					]]>
 			</Payload>
             <StatusCode>501</StatusCode>
-            <ReasonPhrase>Not Implementedt</ReasonPhrase>
+            <ReasonPhrase>Not Implemented</ReasonPhrase>
         </Set>
     </FaultResponse>
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>

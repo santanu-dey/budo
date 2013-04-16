@@ -1,181 +1,110 @@
 {
-	 "configurations":[
-		{
-			 "name":"prod",
-
-				"policies":[
-					{
-						 "name":"handleBadRequest.xml",
-						 "tokens":[
-									{
-									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']" ,
-										"value":"max-age=3600"
-									},
-									
-									{
-									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name" ,
-										"value":"Cache-Control"
-								}
-						 ]
-					},
-					{
-						 "name":"assignPayload.xml",
-							"tokens":[
-
-												{
-									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']" ,
-										"value":"max-age=3600"
-									},
-									
-									{
-									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name" ,
-										"value":"Cache-Control"
-								}
-
-													
-								
-						 ]
-					}
-			 ],
-			 "proxies":[
-					{
-						 "name":"default.xml",
-					"tokens":[
-						{
-									 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
-										"value":"/v2/default-operation"
-										}
-						 ]
-					},
-					{
-						 "name":"xyz-policy",
-					 "tokens":[
-								{
-									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
-										"value":"http://google.com"
-										},
-								 {
-									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
-										"value":"http://google.com"
-										}   
-						 ]
-					}
-			 ],
-			 
-				"targets":[
-					{
-						 "name":"default.xml",
-					"tokens":[
-						{
-									 "xpath":"/TargetEndpoint/HTTPTargetConnection/URL" ,
-										"value":"http://apigee.com"
-										}
-						 ]
-					},
-					{
-						 "name":"xyz-policy",
-					 "tokens":[
-								{
-									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
-										"value":"http://google.com"
-										},
-								 {
-									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
-										"value":"http://google.com"
-										}   
-						 ]
-					}
-			 ]
-			 
-		},
-	 {
-				"name":"test",
-
-				"policies":[
-						{
-						 "name":"handleBadRequest.xml",
-						 "tokens":[
-									{
-									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']" ,
-										"value":"max-age=3600"
-									},
-									
-									{
-									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name" ,
-										"value":"Cache-Control"
-								}
-						 ]
-					},
-					{
-						 "name":"assignPayload.xml",
-							"tokens":[
-
-												{
-									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']" ,
-										"value":"max-age=3600"
-									},
-									
-									{
-									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name" ,
-										"value":"Cache-Control"
-									}
-
-									]
-
-					}
-
-					
-				 ],
-				 "proxies":[
-						{
-							 "name":"default.xml",
-						"tokens":[
-							{
-										 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
-											"value":"/v1/default-operation"
-											}
-							 ]
-						},
-						{
-							 "name":"xyz-policy.xml",
-						 "tokens":[
-									{
-										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
-											"value":"http://google.com"
-											},
-									 {
-										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
-											"value":"http://google.com"
-											}   
-							 ]
-						}
-				 ],
-				 
-					"targets":[
-						{
-							 "name":"default.xml",
-						"tokens":[
-							{
-										 "xpath":"/TargetEndpoint/HTTPTargetConnection/URL" ,
-											"value":"http://weather.yahooapis.com"
-											}
-							 ]
-						},
-						{
-							 "name":"xyz-policy.xml",
-						 "tokens":[
-									{
-										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
-											"value":"http://google.com"
-											},
-									 {
-										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
-											"value":"http://google.com"
-											}   
-							 ]
-						}
-				 ]
-				 
-		}
-	 ]
+    "configurations": [
+        {
+            "name": "prod",
+            "policies": [
+                {
+                    "name": "handleBadRequest.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']",
+                            "value": "max-age=3600"
+                        },
+                        {
+                            "xpath": "/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name",
+                            "value": "Cache-Control"
+                        }
+                    ]
+                },
+                {
+                    "name": "assignPayload.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']",
+                            "value": "max-age=3600"
+                        },
+                        {
+                            "xpath": "/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name",
+                            "value": "Cache-Control"
+                        }
+                    ]
+                }
+            ],
+            "proxies": [
+                {
+                    "name": "default.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/ProxyEndpoint/HTTPProxyConnection/BasePath",
+                            "value": "/v2/default-operation"
+                        }
+                    ]
+                }
+            ],
+            "targets": [
+                {
+                    "name": "default.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/TargetEndpoint/HTTPTargetConnection/URL",
+                            "value": "http://weather.yahooapis.com"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "test",
+            "policies": [
+                {
+                    "name": "handleBadRequest.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']",
+                            "value": "max-age=3600"
+                        },
+                        {
+                            "xpath": "/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name",
+                            "value": "Cache-Control"
+                        }
+                    ]
+                },
+                {
+                    "name": "assignPayload.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']",
+                            "value": "max-age=3600"
+                        },
+                        {
+                            "xpath": "/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name",
+                            "value": "Cache-Control"
+                        }
+                    ]
+                }
+            ],
+            "proxies": [
+                {
+                    "name": "default.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/ProxyEndpoint/HTTPProxyConnection/BasePath",
+                            "value": "/v1/default-operation"
+                        }
+                    ]
+                }
+            ],
+            "targets": [
+                {
+                    "name": "default.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/TargetEndpoint/HTTPTargetConnection/URL",
+                            "value": "http://weather.yahooapis.com"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }

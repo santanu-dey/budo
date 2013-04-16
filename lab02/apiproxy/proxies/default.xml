@@ -18,7 +18,7 @@
             <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;) and (request.verb = &quot;GET&quot;)</Condition> 
         </Flow>
         <Flow name="Lab02-Default-Operation">
-            <Description>Bad requests</Description>
+            <Description>Matches all other requests</Description>
             <Request>
             </Request>
             <Response>
@@ -47,6 +47,7 @@
     <DefaultFaultRule name="DefaultFaultRule">
         <Step>
             <Name>handleBackendError</Name>
+            <!-- <Name>handleBadRequest</Name> -->
             <!-- <Condition>fault.category = "Messaging"</Condition>   -->
         </Step>
         <AlwaysEnforce>true</AlwaysEnforce>

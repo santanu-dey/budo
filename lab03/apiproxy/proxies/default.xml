@@ -5,15 +5,15 @@
 		<Flow name="Lab03-Fault-Demo">
             <Description>This flow raises fault</Description>
             <Request>
-        	  	<Step>
-                    <FaultRules/>
-                    <Condition>(request.verb := &quot;GET&quot;)</Condition> <!-- Conditions are  optional -->
-                    <Name>RaiseFaultForGet</Name> <!-- This policy will raise faults based on some conditions -->
+
+                <Step>
+                    <Condition>(request.verb := &quot;POST&quot;)</Condition> <!-- Conditions are  optional -->
+                    <Name>raiseFaultForPost</Name> <!-- This policy will raise faults based on some conditions -->
                 </Step>
                 <Step>
-                    <FaultRules/>
-                    <Condition>(request.verb := &quot;POST&quot;)</Condition> <!-- Conditions are  optional -->
-                    <Name>RaiseFaultForPost</Name> <!-- This policy will raise faults based on some conditions -->
+                    <Condition>(request.verb := &quot;GET&quot;)</Condition> <!-- this condition is not needed -->
+                    
+                    <Name>raiseFaultForGet</Name> <!-- This policy will raise faults based on some conditions -->
                 </Step>
             </Request>
             <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;)</Condition> 
@@ -30,6 +30,17 @@
         <Request/>
         <Response/>
     </PostFlow>
+
+<!--     <FaultRules>
+        <Condition>fault.name = "raisefault.raiseFaultForGet"</Condition>  Bug: Condition is not effective
+        <FaultRule name="GetFaultHandler">
+            <Step>
+                <Name>handleFault</Name>
+            </Step>
+        </FaultRule>
+    </FaultRules>  -->
+
+
 
     <HTTPProxyConnection>
     	<BasePath>TO_BE_REPLACED</BasePath>

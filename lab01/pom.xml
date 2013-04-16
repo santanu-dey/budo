@@ -9,9 +9,9 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>apigee-training-labs</groupId>
-	<artifactId>simple-stub</artifactId>
+	<artifactId>stubbed-api</artifactId>
 	<version>1.0</version>
-	<name>simple-stub</name>
+	<name>stubbed-api</name>
 	<packaging>pom</packaging>
 
 	<build>
@@ -95,7 +95,7 @@
 						</goals>
 						<configuration>
 							<skipTests>false</skipTests>
-                        	<ignoreResultFailures>false</ignoreResultFailures>
+                        	<ignoreResultFailures>true</ignoreResultFailures>
                         	<suppressJMeterOutput>false</suppressJMeterOutput>
 <!-- 							<jmeterUserProperties>
 								for user properites 

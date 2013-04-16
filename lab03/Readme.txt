@@ -1,13 +1,12 @@
 This lab demonstrates 
 	1. How to raise a fault - we have  a standard policy to raise a fault. Set header, status code, or payload 
-    2. Try to raise faults conditionally. That's optional
-    3. Then how to handle the Faults (Fault Rules are for fault handling)
-        a. Within the policy
-        b. at Flow level policy hanlder
-        c. with a condition
+    2. How to execute a step conditionally. In this example, faults are raised by raising conditions. 
+    3. Then show how to handle the Faults (Fault Rules are for fault handling)
+        a. Within the policy - This is a bug at the moment
+        b. at Flow level policy hanlder - condition does not work. That is a bug at the moment. 
+        
 
 *************
-
 
 
 When a fault occurs in a message flow, the fault handler employs the following fault rule to match the fault with a fault handler:
@@ -29,8 +28,12 @@ You can apply multiple fault rules to either the proxy or target in a flow. Only
     Policy attachments in a fault rule are enforced in the order of their attachment.
 
 
+Test
+curl -v http://test-4g-test.apigee.net/v1/fault/ -X POST -d "some data"
+curl -v http://test-4g-test.apigee.net/v1/fault/
 
-How to raise a faults?
 
-
+Prod
+curl -v http://test-4g-prod.apigee.net/v2/fault/ -X POST -d "some data"
+curl -v http://test-4g-prod.apigee.net/v2/fault/ 
 

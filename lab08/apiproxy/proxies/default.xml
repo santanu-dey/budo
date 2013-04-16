@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ProxyEndpoint name="default">
 	<Flows>
-		<Flow name="Lab05-Caching">
+		<Flow name="Lab08-JavaCallout">
 			<Description>This flow demonstrates caching</Description>
 			<Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;)</Condition>
 			<Request>

@@ -8,10 +8,10 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>apigee-training-labs</groupId>
-	<artifactId>fault-handling</artifactId>
+	<groupId>analytics-collection</groupId>
+	<artifactId>caching</artifactId>
 	<version>1.0</version>
-	<name>fault-handling</name>
+	<name>analytics-collection</name>
 	<packaging>pom</packaging>
 
 	<build>

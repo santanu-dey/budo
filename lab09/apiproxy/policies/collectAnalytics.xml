@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<StatisticsCollector async="false" continueOnError="false" enabled="true" name="collectAnalytics">
+        <DisplayName>Statistics Collector 1</DisplayName>
+        <FaultRules/>
+        <Properties/>
+        <Statistics>
+            <Statistic name="MovieName" ref="movieName" type="string">{default}</Statistic>
+            <Statistic name="MovieRating" ref="movieRating" type="string">{default}</Statistic>
+            <Statistic name="MovieRuntime" ref="movieRuntime" type="string">{default}</Statistic>
+            <Statistic name="MovieLanguage" ref="movieLanguage" type="string">{default}</Statistic>
+        </Statistics>
+    </StatisticsCollector>

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="2" name="simple-stub">
+<APIProxy revision="2" name="stubbed-api">
 <Description>Lab01 - Stubbed response proxy</Description>
 </APIProxy>
