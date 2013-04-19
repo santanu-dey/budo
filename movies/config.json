@@ -1,0 +1,84 @@
+{
+    "configurations": [
+        {
+            "name": "prod",
+            "policies": [
+                {
+                    "name": "assignPayload1.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']",
+                            "value": "max-age=3600"
+                        },
+                        {
+                            "xpath": "/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name",
+                            "value": "Cache-Control"
+                        }
+                    ]
+                }
+            ],
+            "proxies": [
+                {
+                    "name": "default1.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/ProxyEndpoint/HTTPProxyConnection/BasePath",
+                            "value": "/v2/stubbed"
+                        }
+                    ]
+                }
+            ],
+            "targets": [
+                {
+                    "name": "default1.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/TargetEndpoint/HTTPTargetConnection/URL",
+                            "value": "http://apigee.com"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "test",
+            "policies": [
+                {
+                    "name": "assignPayload1.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']",
+                            "value": "max-age=100"
+                        },
+                        {
+                            "xpath": "/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name",
+                            "value": "Cache-Control"
+                        }
+                    ]
+                }
+            ],
+            "proxies": [
+                {
+                    "name": "default1.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/ProxyEndpoint/HTTPProxyConnection/BasePath",
+                            "value": "/v1/stubbed"
+                        }
+                    ]
+                }
+            ],
+            "targets": [
+                {
+                    "name": "default1.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/TargetEndpoint/HTTPTargetConnection/URL",
+                            "value": "http://weather.yahooapis.com"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

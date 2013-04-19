@@ -1,0 +1,14 @@
+<AssignMessage name="AssignHeader">
+  <AssignTo createNew="false" type="response"></AssignTo>
+  <Set>
+
+    <Headers>
+      <Header name="Content-Type">application/xml</Header>
+    </Headers>
+
+   <!--  <QueryParams>
+      <QueryParam name="address">{request.queryparam.address}</QueryParam>
+    </QueryParams>
+    <Verb>GET</Verb> -->
+  </Set>
+</AssignMessage>

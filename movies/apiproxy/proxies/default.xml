@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description>Default Proxy to create flows on an API</Description>
+    <FaultRules/>
+    <Flows>
+        <Flow name="get my latest movie">
+            <Description></Description>
+            <Request>
+                <Step>
+                    <Name>verifyAPIKey</Name>
+                </Step>
+                <Step>
+                    <Name>validateAccessToken</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>AssignHeader</Name>
+                </Step>
+                <Step>
+                    <Name>convertMovieToJSON</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+        </Flow>
+    </Flows>
+
+    <HTTPProxyConnection>
+        <BasePath>/v2/mylatestmovie</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

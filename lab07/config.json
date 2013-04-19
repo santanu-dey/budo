@@ -9,7 +9,7 @@
 						 "tokens":[
 								{
 									 "xpath":"/AssignMessage/Add/Headers/Header[@name='Location']" ,
-										"value":"http://training-backendservice.rhcloud.com/faces/consent/login.jsp"
+										"value":"http://training-backendservice.rhcloud.com/faces/consent/login.jsp?sessionToken=kjew9034lnv120-9jksd"
 										}
 						 ]
 					},

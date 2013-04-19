@@ -4,7 +4,7 @@
 	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
 	<Set>
 
-		<Payload contentType="applcation/json">
+		<Payload contentType="application/json">
 			{
 				"msg": { "response" : "Hello World"} 
 			}

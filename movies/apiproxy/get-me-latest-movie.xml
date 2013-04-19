@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="get-me-latest-movie">
+    <ConfigurationVersion minorVersion="0" majorVersion="4"/>
+    <Description></Description>
+    <DisplayName>get-me-latest-movie</DisplayName>
+</APIProxy>

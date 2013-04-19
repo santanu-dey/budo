@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndpoint name="default">
+    <Description>Apigee auto generated target endpoint</Description>
+    <FaultRules/>
+    <Flows/>
+    <HTTPTargetConnection>
+        <Properties/>
+<URL>http://imdbapi.org/?title=ghost&amp;type=xml&amp;plot=simple&amp;episode=1&amp;limit=1&amp;yg=0&amp;mt=none&amp;lang=en-US&amp;offset=&amp;aka=simple&amp;release=simple&amp;business=0&amp;tech=0</URL>
+    </HTTPTargetConnection>
+</TargetEndpoint>
