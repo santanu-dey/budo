@@ -9,7 +9,6 @@
                     <FaultRules/>
                     <Name>validateApiKey</Name>
                 </Step>
-
             </Request>
 
 		    <Response>
