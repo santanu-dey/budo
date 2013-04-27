@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description>SimpleStub</Description>
+    <FaultRules/>
+
+    <Flows>
+        <Flow name="Basic-Auth">
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;) and (request.verb = &quot;GET&quot;)</Condition> 
+            <Description>stub</Description>
+            <Request>
+                
+                <Step>
+                    <Condition>(request.header.Authorization.values.count = 0)</Condition> 
+                    <!-- <Condition>(!(request.header.Authorization =| &quot;Basic&quot;)) or (request.header.Authorization.values.count = 0)</Condition>  -->
+                    <FaultRules/>
+                    <Name>ChallengeResponse</Name>
+                </Step>
+                <Step>
+                    <FaultRules/>
+                    <Name>SetGrantType</Name>
+                </Step>                
+
+                <Step>
+                    <Condition>(request.header.Authorization =| &quot;Basic&quot;)</Condition>
+                    <FaultRules/>
+                    <Name>ValidateBasicAuth</Name>
+                </Step>
+<!-- 
+                <Step>
+                    <Condition>(oauthV2.ValidateBasicAuth.failed = "true")</Condition> 
+                    <Condition>(!(request.header.Authorization =| &quot;Basic&quot;)) or (request.header.Authorization.values.count = 0)</Condition> 
+                    <FaultRules/>
+                    <Name>AuthenticationFailed</Name>
+                </Step> -->
+            </Request>
+            <Response>
+                <Step>
+                    <FaultRules/>
+                    <Name>assignPayload</Name>
+                </Step>
+            </Response>
+        </Flow>
+    </Flows>
+
+    <FaultRules>
+        <FaultRule name="InvalidApiKey">
+            <Condition>fault.name = &quot;invalid_client&quot;</Condition>
+            <Step>
+                <FaultRules/>
+                <Name>AuthenticationFailed</Name>
+            </Step>
+        </FaultRule>
+    </FaultRules>
+    
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    
+    <HTTPProxyConnection>
+        <BasePath>TO_BE_REPLACED</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+        <!-- <VirtualHost>TestVH8081</VirtualHost> -->  <!-- You will get an error if any of the referred VH are missing -->
+    </HTTPProxyConnection>
+<!--     <RouteRule name="null-target"> -->
+    <RouteRule name="null-target"><!--  If no target with this name exists it becomes a null-target, i.e., stubbed proxy -->
+    </RouteRule>
+
+</ProxyEndpoint> 
