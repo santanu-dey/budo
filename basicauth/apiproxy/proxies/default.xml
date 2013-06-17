@@ -13,19 +13,24 @@
                     <Condition>(request.header.Authorization.values.count = 0)</Condition> 
                     <!-- <Condition>(!(request.header.Authorization =| &quot;Basic&quot;)) or (request.header.Authorization.values.count = 0)</Condition>  -->
                     <FaultRules/>
-                    <Name>ChallengeResponse</Name>
+                    <Name>challengeResponse</Name>
                 </Step>
                 <Step>
                     <FaultRules/>
-                    <Name>SetGrantType</Name>
+                    <Name>setGrantType</Name>
                 </Step>                
 
                 <Step>
                     <Condition>(request.header.Authorization =| &quot;Basic&quot;)</Condition>
                     <FaultRules/>
-                    <Name>ValidateBasicAuth</Name>
+                    <Name>validateBasicAuth</Name>
                 </Step>
-<!-- 
+                <Step>
+                    <Condition>(oauthv2accesstoken.validateBasicAuth.access_token != null)</Condition>
+                    <FaultRules/>
+                    <Name>validateAccessToken</Name>
+                </Step>
+<!--
                 <Step>
                     <Condition>(oauthV2.ValidateBasicAuth.failed = "true")</Condition> 
                     <Condition>(!(request.header.Authorization =| &quot;Basic&quot;)) or (request.header.Authorization.values.count = 0)</Condition> 
@@ -43,11 +48,20 @@
     </Flows>
 
     <FaultRules>
+<!--         This fault is for wrong apikey in the authorization header -->
         <FaultRule name="InvalidApiKey">
             <Condition>fault.name = &quot;invalid_client&quot;</Condition>
             <Step>
                 <FaultRules/>
-                <Name>AuthenticationFailed</Name>
+                <Name>authenticationFailed</Name>
+            </Step>
+        </FaultRule>
+ <!--         This fault is for wrong apikey in the authorization header -->
+        <FaultRule name="InvalidProduct">
+            <Condition>fault.name = &quot;InvalidAPICallAsNoApiProductMatchFound&quot;</Condition>
+            <Step>
+                <FaultRules/>
+                <Name>authorizationFailed</Name>
             </Step>
         </FaultRule>
     </FaultRules>

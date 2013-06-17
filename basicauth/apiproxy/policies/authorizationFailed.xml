@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AssignMessage name="challengeResponse">
-	<AssignTo type="response" createNew="true"/>
+<AssignMessage name="authorizationFailed">
+	<AssignTo type="response" createNew="false"/>
 	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
-	<Set>
+ 	<Set>
 
 		<Payload contentType="application/json">
 			{
-				"msg": { "response" : "Not Authorized. Access Denied"} 
+				"Error": { "response" : "Unauthorized. Not allowed to access the requested resource"} 
 			}
 		</Payload>
-		    <StatusCode>401</StatusCode>
+		    <StatusCode>403</StatusCode>
 	</Set>
-
+ 
 	<Add> 
-		<Headers> 
+		<Headers>
 			<Header name="WWW-Authenticate">Basic realm="Bluvia"</Header> 
 			<Header name="Access-Control-Allow-Origin">*</Header> 
 		</Headers> 

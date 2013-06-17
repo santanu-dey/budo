@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AssignMessage name="assignPayload">
+<AssignMessage name="handleBadRequestError">
 	<AssignTo type="response" createNew="true"/>
 	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
 	<Set>
 
 		<Payload contentType="application/json">
 			{
-				"msg": { "response" : "Hello World - Authentication success!"} 
+				"msg": { "response" : "Bad Request"} 
 			}
 		</Payload>
-		    <StatusCode>200</StatusCode>
+		    <StatusCode>403</StatusCode>
 	</Set>
 
 	<Add> 

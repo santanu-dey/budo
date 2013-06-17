@@ -16,7 +16,14 @@
 		<Headers> 
 			<Header name="TO_BE_REPLACED">TO_BE_REPLACED</Header> 
 			<Header name="Access-Control-Allow-Origin">*</Header> 
+			<Header name="request-id">{response.transportid}</Header>
 		</Headers> 
 	</Add>
+
+	<AssignVariable>
+		<Name>response.header.custom</Name>
+		<Ref>request.queryparam.abc</Ref>
+		<Value>hello!</Value>
+	</AssignVariable>
 
 </AssignMessage>

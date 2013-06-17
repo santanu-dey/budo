@@ -4,23 +4,27 @@
     <FaultRules/>
 
     <Flows>
-        <Flow name="Lab01-Simple-stub">
+        <Flow name="Password-Grant">
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;) and (request.verb = &quot;GET&quot;)</Condition> 
             <Description>stub</Description>
             <Request>
+
                 <Step>
-                    <Condition>(message.queryparams.count > 0)</Condition>
-                    <Name>APIKeyVerifier</Name>
+                    <Name>AllowPasswordGrant</Name>
                 </Step>
             </Request>
             <Response>
-                <Step>
-                    <FaultRules/>
-                    <Name>assignPayload</Name>
-                </Step>
             </Response>
-            <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;) and (request.verb = &quot;GET&quot;)</Condition> 
+
         </Flow>
     </Flows>
+
+    <DefaultFaultRule name="Other">
+        <Step>
+            <Name>handleBadRequestError</Name>
+        </Step>
+        <AlwaysEnforce>true</AlwaysEnforce>
+    </DefaultFaultRule> 
     
     <PreFlow name="PreFlow">
         <Request/>
