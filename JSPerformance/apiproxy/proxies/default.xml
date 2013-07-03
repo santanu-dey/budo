@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description>SimpleStub</Description>
+    <FaultRules/>
+
+    <Flows>
+        <Flow name="jsc-stub">
+            <Description>stub</Description>
+            <Request>
+                <Step>
+                    <Name>basicAuth</Name>
+                </Step>
+                <Step>
+                    <Name>basicAuth</Name>
+                </Step>
+                    <Step>
+                    <Name>basicAuth</Name>
+                </Step>
+                <Step>
+                    <Name>basicAuth</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <FaultRules/>
+                    <Name>assignPayload</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;) and (request.verb = &quot;GET&quot;) and (message.queryparams.count > 0)</Condition> 
+        </Flow>
+    </Flows>
+    
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    
+    <HTTPProxyConnection>
+        <BasePath>/v1/js</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+        <!-- <VirtualHost>TestVH8081</VirtualHost> -->  <!-- You will get an error if any of the referred VH are missing -->
+    </HTTPProxyConnection>
+<!--     <RouteRule name="null-target"> -->
+    <RouteRule name="null-target"><!--  If no target with this name exists it becomes a null-target, i.e., stubbed proxy -->
+    </RouteRule>
+
+</ProxyEndpoint> 

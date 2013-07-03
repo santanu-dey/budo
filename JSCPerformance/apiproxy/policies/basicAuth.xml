@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Javascript enabled="true" continueOnError="false" async="false" name="basicAuth">
+    <ResourceURL>jsc://basicAuth.js</ResourceURL>
+</Javascript>

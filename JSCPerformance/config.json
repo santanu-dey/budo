@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "name": "prod",
+            "policies": [
+                {
+                    "name": "assignPayload.xml",
+                    "tokens": []
+                }
+            ],
+            "proxies": [
+                {
+                    "name": "default.xml",
+                    "tokens": []
+                }
+            ],
+            "targets": [
+                {
+                    "name": "default.xml",
+                    "tokens": []
+                }
+            ]
+        },
+        {
+            "name": "test",
+            "policies": [
+                {
+                    "name": "assignPayload.xml",
+                    "tokens": []
+                }
+            ],
+            "proxies": [
+                {
+                    "name": "default.xml",
+                    "tokens": []
+                }
+            ],
+            "targets": [
+                {
+                    "name": "default.xml",
+                    "tokens": []
+                }
+            ]
+        }
+    ]
+}
