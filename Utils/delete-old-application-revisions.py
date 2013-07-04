@@ -58,17 +58,21 @@ if (len(apps) > 0):
 
 			for l in range (1, active_deployment_revision+1):
 				if l not in revisions_to_keep:
-					connection.request('DELETE', '/v1/organizations/'+org_name+'/apis/'+apps[i]+'/revisions/'+str(l), '', headers)
-					resp = connection.getresponse()
-					print "*************************************** Deleting revision " +str(l) +" of Application "+apps[i]+" ***************************************"
-					if (resp.status >= 200):
-						#print resp.read()
-						revisions = simplejson.loads(resp.read()) #   esp.read().encode('ascii', 'ignore')
-						print revisions
-					else:
-						print "request to retrieve the application revisions failed for "+apps[i]+" application"
-						print str(resp.status)+" "+resp.reason
-						print resp.read()
+					try:
+						connection.request('DELETE', '/v1/organizations/'+org_name+'/apis/'+apps[i]+'/revisions/'+str(l), '', headers)
+						resp = connection.getresponse()
+						print "*************************************** Deleting revision " +str(l) +" of Application "+apps[i]+" ***************************************"
+						if (resp.status >= 200):
+							#print resp.read()
+							revisions = simplejson.loads(resp.read()) #   esp.read().encode('ascii', 'ignore')
+							print revisions
+						else:
+							print "request to retrieve the application revisions failed for "+apps[i]+" application"
+							print str(resp.status)+" "+resp.reason
+							print resp.read()
+					except Exception, e:
+						print e
+						pass
 				else:
 					print "*************************************** Keeping revision " +str(l) +" of Application "+apps[i]+" ***************************************"
 
