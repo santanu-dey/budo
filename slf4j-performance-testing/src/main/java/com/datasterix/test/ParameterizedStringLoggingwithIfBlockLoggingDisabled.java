@@ -16,7 +16,7 @@ public class ParameterizedStringLoggingwithIfBlockLoggingDisabled implements Tes
 
     public void loop(int i) {
         for (int j=0; j<=i; j++) {
-            // Log level is set to Error. So debug should not be logged.
+            // Log level is set to Error. So debug should not be logged. This is equivalent of logging disabled.
             if (logger.isDebugEnabled()) {
                 logger.debug("{}", loggingString);
             }

@@ -9,7 +9,7 @@ import java.security.SecureRandom;
 /**
  * Created by santanudey on 9/15/14.
  */
-public class ParameterizedObjectLoggingwithoutIfBlockLoggingDisabled implements TestLogging{
+public class ParameterizedObjectLoggingwithoutIfBlockLoggingEnabled implements TestLogging{
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -18,8 +18,8 @@ public class ParameterizedObjectLoggingwithoutIfBlockLoggingDisabled implements 
             // Log level is set to Error. So errors should be logged.
 
                 // Here we are logging a constructed object. Significant cycle is spent in constructing the object.
-                // Log level is set to Error. So debug should not be logged. This is equivalent of logging disabled.
-                logger.debug("Object Debug {} without if block", (new BigInteger(130, new SecureRandom()).toString(32)));
+                // Log level is set to Error. This is equivalent of logging enabled.
+                logger.error("Object Debug {} without if block", (new BigInteger(130, new SecureRandom()).toString(32)));
 
         }
     }

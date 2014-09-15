@@ -23,6 +23,7 @@ public class TestAll {
 
         ParameterizedObjectLoggingwithoutIfBlockLoggingDisabled testCaseObj9 = new ParameterizedObjectLoggingwithoutIfBlockLoggingDisabled();
         UnparameterizedObjectLoggingwithoutIfBlockLoggingEnabled testCaseObj10 = new UnparameterizedObjectLoggingwithoutIfBlockLoggingEnabled();
+        ParameterizedObjectLoggingwithoutIfBlockLoggingEnabled testCaseObj11 = new ParameterizedObjectLoggingwithoutIfBlockLoggingEnabled();
 
         System.out.println("\nChecking performance of static String logging");
         System.out.println("********************************************");
@@ -44,14 +45,16 @@ public class TestAll {
         System.out.println("\nInitially Logging Disabled");
         testRun(testCaseObj7, "Unparameterized Object Logging with if block, logging disabled");
         testRun(testCaseObj8, "Parameterized Object Logging with if block, logging disabled");
+        testRun(testCaseObj9, "Parameterized Object Logging without if block, logging disabled");
 
         System.out.println("\nEnable Logging Now");
         testRun(testCaseObj6, "Unparameterized Object Logging with if block, logging enabled");
         testRun(testCaseObj5, "Parameterized Object Logging with if block, logging enabled");
 
         System.out.println("\nRemove if block");
-        testRun(testCaseObj9, "Parameterized Object Logging without if block, logging enabled");
+
         testRun(testCaseObj10, "Unparameterized Object Logging without if block, logging enabled");
+        testRun(testCaseObj11, "Parameterized Object Logging without if block, logging enabled");
 
 
 

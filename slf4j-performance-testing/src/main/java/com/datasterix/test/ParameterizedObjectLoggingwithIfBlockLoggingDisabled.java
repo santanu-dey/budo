@@ -17,7 +17,8 @@ public class ParameterizedObjectLoggingwithIfBlockLoggingDisabled implements Tes
         for (int j=0; j<=i; j++) {
             // Log level is set to Error. So errors should be logged.
             if (logger.isDebugEnabled()) {
-                // Here we are logging a constrcuted object. Significant cycle in constructung the object
+                // Here we are logging a constructed object. Significant cycle in constructing the object
+                // Log level is set to Error. So debug should not be logged. This is equivalent of logging disabled.
                 logger.debug("Object Error {}", (new BigInteger(130, new SecureRandom()).toString(32)));
             }
         }
