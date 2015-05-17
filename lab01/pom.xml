@@ -1,22 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
 		<artifactId>parent-pom</artifactId>
 		<groupId>apigee-training-labs</groupId>
 		<version>1.0</version>
 		<relativePath>../parent-pom/pom.xml</relativePath>
 	</parent>
-
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>apigee-training-labs</groupId>
 	<artifactId>stubbed-api</artifactId>
 	<version>1.0</version>
 	<name>stubbed-api</name>
 	<packaging>pom</packaging>
-
 	<build>
 		<plugins>
-			
 			<plugin>
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>2.5</version>
@@ -30,8 +26,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
-
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.6</version>
@@ -57,23 +51,20 @@
 					</execution>
 				</executions>
 			</plugin>
-
 			<plugin>
-				<groupId>com.apigee.build-tools.enterprise4g</groupId>
-				<artifactId>4G-gateway-maven-build-pack</artifactId>
-				<configuration>
-					<skip>false</skip> <!-- Use this module level config to skip module build. Make it true -->
-				</configuration>
+				<groupId>io.apigee.build-tools.enterprise4g</groupId>
+				<artifactId>apigee-edge-maven-plugin</artifactId>
+				<version>1.0.0</version>
 				<executions>
 					<execution>
-						<id>configure-bundle-step</id>
+						<id>configure-bundle</id>
 						<phase>package</phase>
 						<goals>
 							<goal>configure</goal>
 						</goals>
 					</execution>
 					<execution>
-						<id>install-bundle-step</id>
+						<id>deploy-bundle</id>
 						<phase>install</phase>
 						<goals>
 							<goal>deploy</goal>
@@ -81,8 +72,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
-
 			<plugin>
 				<groupId>com.lazerycode.jmeter</groupId>
 				<artifactId>jmeter-maven-plugin</artifactId>
@@ -94,18 +83,15 @@
 							<goal>jmeter</goal>
 						</goals>
 						<configuration>
-							<skipTests>false</skipTests>
-                        	<ignoreResultFailures>true</ignoreResultFailures>
-                        	<suppressJMeterOutput>false</suppressJMeterOutput>
-<!-- 							<jmeterUserProperties>
-								for user properites 
-							</jmeterUserProperties> -->
+							<skipTests>true</skipTests>
+							<ignoreResultFailures>true</ignoreResultFailures>
+							<suppressJMeterOutput>false</suppressJMeterOutput>
+							<!-- 							<jmeterUserProperties>for user properites 
+							</jmeterUserProperties>-->
 						</configuration>
 					</execution>
 				</executions>
-			</plugin> 
-
+			</plugin>
 		</plugins>
 	</build>
-
 </project>

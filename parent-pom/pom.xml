@@ -18,57 +18,55 @@
 				<updatePolicy>never</updatePolicy>
 			</releases>
 		</pluginRepository>
-		<pluginRepository>
-			<id>apigee-cs-repo</id>
-			<url>http://repo.apigee.com:8081/artifactory/repo</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-		</pluginRepository>
-
-
 	</pluginRepositories>
-	
 	<modules>
 		<module>../lab01</module>
 	</modules>
-	
 	<build>
-
 		<pluginManagement>
 			<plugins>
 				<plugin>
-					<groupId>com.apigee.build-tools.enterprise4g</groupId>
-					<artifactId>4G-gateway-maven-build-pack</artifactId>
-					<version>0.0.10</version>
+					<groupId>io.apigee.build-tools.enterprise4g</groupId>
+					<artifactId>apigee-edge-maven-plugin</artifactId>
+					<version>1.0.0</version>
+					<executions>
+						<execution>
+							<id>configure-bundle</id>
+							<phase>package</phase>
+							<goals>
+								<goal>configure</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>deploy-bundle</id>
+							<phase>install</phase>
+							<goals>
+								<goal>deploy</goal>
+							</goals>
+						</execution>
+					</executions>
 				</plugin>
-				  <plugin>
-                    <groupId>com.lazerycode.jmeter</groupId>
-                    <artifactId>jmeter-maven-plugin</artifactId>
-                    <version>1.8.0</version>
-                    <configuration>
-                        <testFilesDirectory>tests/</testFilesDirectory>
-                    </configuration>
-                </plugin>
-            	<plugin>
-	                <groupId>org.codehaus.mojo</groupId>
-	                <artifactId>exec-maven-plugin</artifactId>
-	                <version>1.2.1</version>
-                </plugin>
-                <plugin>
+				<plugin>
+					<groupId>com.lazerycode.jmeter</groupId>
+					<artifactId>jmeter-maven-plugin</artifactId>
+					<version>1.8.0</version>
+					<configuration>
+						<testFilesDirectory>tests/</testFilesDirectory>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>exec-maven-plugin</artifactId>
+					<version>1.2.1</version>
+				</plugin>
+				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.9</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
-
-
 		<plugins>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -78,29 +76,22 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
-
- 			<plugin>
-				<groupId>com.apigee.build-tools.enterprise4g</groupId>
-				<artifactId>4G-gateway-maven-build-pack</artifactId>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
-			</plugin> 
-
 		</plugins>
 	</build>
-	
-	
-	<!-- This is where you add the environment specific properties under various profile names -->		
+	<!-- This is where you add the environment specific properties under various profile names -->
 	<profiles>
 		<profile>
-			<id>prod</id>  <!-- use this profile id from command line -->
+			<id>prod</id>
+			<!-- use this profile id from command line -->
 			<properties>
-				<apigee.profile>prod</apigee.profile> <!-- this corresponds to config.json -->
+				<apigee.profile>prod</apigee.profile>
+				<!-- this corresponds to config.json -->
 				<apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
-				<apigee.apiversion>v1</apigee.apiversion> <!-- value of version in  https://api.enterprise.apigee.com/v2 -->
+				<apigee.apiversion>v1</apigee.apiversion>
+				<!-- value of version in  https://api.enterprise.apigee.com/v2 -->
 				<apigee.org>test-4g</apigee.org>
-				<apigee.env>prod</apigee.env> <!-- this corresponds to environment name in the org -->
+				<apigee.env>prod</apigee.env>
+				<!-- this corresponds to environment name in the org -->
 				<apigee.username>your-email-login</apigee.username>
 				<apigee.password>your-password</apigee.password>
 			</properties>
@@ -110,7 +101,8 @@
 			<properties>
 				<apigee.profile>test</apigee.profile>
 				<apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
-				<apigee.apiversion>v1</apigee.apiversion> <!-- value of version in  https://api.enterprise.apigee.com/v2 -->
+				<apigee.apiversion>v1</apigee.apiversion>
+				<!-- value of version in  https://api.enterprise.apigee.com/v2 -->
 				<apigee.org>test-4g</apigee.org>
 				<apigee.env>test</apigee.env>
 				<apigee.username>your-email-login</apigee.username>
@@ -118,7 +110,6 @@
 			</properties>
 		</profile>
 	</profiles>
-
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -128,10 +119,4 @@
 		</dependency>
 	</dependencies>
 	
-	<repositories>
-		<repository>
-			<id>apigee-cs-repo</id>
-			<url>http://repo.apigee.com:8081/artifactory/repo</url>
-		</repository>
-	</repositories>
 </project>
