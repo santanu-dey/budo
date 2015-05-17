@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<APIProxy revision="1" name="service-callout">
+<APIProxy revision="1" name="lab06-service-callout">
 	<Description>Lab06 - to demonstrate service call out</Description>
 </APIProxy>

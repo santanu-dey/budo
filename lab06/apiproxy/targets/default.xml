@@ -6,6 +6,6 @@
 
 	<HTTPTargetConnection>
 		<Properties/>
-		<URL>http://api.themoviedb.org/2.1/Movie.getInfo/en/json/35305ba947070080d6c261bc52100f49/{movieID}</URL>
+		<URL>http://api.themoviedb.org/3/search/movie?api_key=35305ba947070080d6c261bc52100f49&amp;amp;query={movieID}</URL>
 	</HTTPTargetConnection>
 </TargetEndpoint>

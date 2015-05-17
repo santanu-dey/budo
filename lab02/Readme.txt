@@ -13,13 +13,13 @@ This lab demonstrates concept of "Flow" in the Gateway. How do we defined flows?
         curl -v http://test-4g-test.apigee.net/v1/default-operation/ 
     	
         Handle POST with default flow
-        curl -v -X POST http://test-4g-test.apigee.net/v1/default-operation/ -data "some data"
+        curl -v -X POST http://test-4g-test.apigee.net/v1/default-operation/ -d "some data"
         curl -v http://test-4g-test.apigee.net/v1/default-operation/test       
 
         
         Handle backend error with fault handling flow
  
-        curl -v -X PUT http://test-4g-test.apigee.net/v1/default-operation/ -data "some data"
+        curl -v -X PUT http://test-4g-test.apigee.net/v1/default-operation/ -d "some data"
 
     Shows different version of API running on test environment / vs. Prod environment
 

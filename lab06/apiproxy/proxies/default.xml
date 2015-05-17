@@ -18,12 +18,11 @@
         	  	
                 <Step>
                     <FaultRules/>
-                    <Name>getLatestMovie</Name>
+                    <Name>getUserPreference</Name>
                 </Step>
-                
                 <Step>
                     <FaultRules/>
-                    <Name>extractMovieID</Name>
+                    <Name>extractUserPreference</Name>
                 </Step>
 
 

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ExtractVariables name="extractMovieID"> 
+<ExtractVariables name="extractUserPreference"> 
 <!-- Read response from geocoding service and parse using JSONPath --> 
-  <Source clearPayload="false">latestMovies</Source> 
+  <Source clearPayload="false">userPreference</Source> 
   <!-- <VariablePrefix>geocoderesponse</VariablePrefix>  -->  <!-- Optional -->
   <XMLPayload> 
     <Variable  name="movieID" type="string"> 
         <!--  createNew="true"  is optional, default is true-->
-      <XPath>
-/OpenSearchDescription/movie/id/text()</XPath> 
+      <XPath>/UserPreference/text()</XPath> 
     </Variable> 
   </XMLPayload> 
   <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>

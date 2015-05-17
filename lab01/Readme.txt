@@ -2,6 +2,11 @@
 Deployment command
 mvn install -Ptest1 -Dapigee.username=****** -Dapigee.password=******
 
+Simple testing command 
+curl -v http://test-4g-test.apigee.net/v1/stubbed/123
+or 
+curl -v http://test-4g-test.apigee.net/v1/stubbed/
+
  This lab demonstrates 
 
 

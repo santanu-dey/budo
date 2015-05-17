@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ServiceCallout async="false" continueOnError="false" enabled="true" name="getLatestMovie">
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="getUserPreference">
     <DisplayName>Service Callout</DisplayName>
     <FaultRules/>
     <Properties/>
     <Request clearPayload="true" variable="moviesRequest">
         <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
     </Request>
-    <Response>latestMovies</Response>
+    <Response>userPreference</Response>
     <HTTPTargetConnection>
         <Properties>
             <Property name="retain.queryparams.enabled">false</Property>
             <Property name="retain.queryparams.headers.enabled">false</Property>
         </Properties>
-        <URL>http://api.themoviedb.org/2.1/Movie.getLatest/en/xml/35305ba947070080d6c261bc52100f49</URL>
+        <URL>http://training-backendservice.rhcloud.com/user-preferences.jsp</URL>
     </HTTPTargetConnection>
 </ServiceCallout>
