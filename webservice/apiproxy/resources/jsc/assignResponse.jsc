@@ -1,0 +1,13 @@
+
+body = JSON.parse(context.getVariable("message.content"));
+body = body.Envelope.Body.CustomerInfoServiceResponse.return;
+
+if (context.getVariable("authorized.scope").indexOf("extended") ==-1 ){
+delete body.email;
+delete body.phone;
+delete body.country; 
+}else if (context.getVariable("authorized.scope").indexOf("basic") ==-1 ){
+	body={"Error": "insufficient_scope"};
+}
+
+context.setVariable("message.content", JSON.stringify(body));

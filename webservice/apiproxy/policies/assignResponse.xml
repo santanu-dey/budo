@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Javascript enabled="true" continueOnError="false" async="false" name="assignResponse">
+	<DisplayName>Assign Json to Response</DisplayName>
+    <ResourceURL>jsc://assignResponse.jsc</ResourceURL>
+</Javascript>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="getScopeValues">  <!-- Note: The policy name and file name should match. -->
+<DisplayName>Get Scope Values</DisplayName>
+<AssignVariable>
+<Name>authorized.scope</Name>
+<Ref>scope</Ref>
+<!-- <Value>http://training-backendservice.rhcloud.com/CustomerInfoService</Value> -->
+</AssignVariable>
+</AssignMessage>

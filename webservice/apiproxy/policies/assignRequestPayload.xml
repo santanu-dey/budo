@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="assignRequestPayload">  <!-- Note: The policy name and file name should match. -->
+	<DisplayName>Assign SOAP Body</DisplayName>
+	<AssignTo type="request"/>
+	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+	
+	<Remove>
+		<!-- idea is to remove all conent from the incoming request -->
+	</Remove>
+	<Set>
+		<Headers> 
+			<Header name="SoapAction">""</Header> 
+		</Headers> 
+
+		<Payload contentType="text/xml"><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tra="http://training/">
+			<soapenv:Header/>
+			<soapenv:Body>
+				<tra:CustomerInfoService>
+					<arg0>{message.queryparam.customer_id}</arg0>
+				</tra:CustomerInfoService>
+			</soapenv:Body>
+		</soapenv:Envelope>
+	</Payload>
+	<Verb>POST</Verb>
+
+</Set>
+
+
+
+<Add> 
+
+</Add>
+<AssignVariable>
+<Name>target.url</Name>
+<!-- <Ref>request.queryparam.abc</Ref> -->
+<Value>http://training-backendservice.rhcloud.com/CustomerInfoService</Value>
+</AssignVariable>
+</AssignMessage>

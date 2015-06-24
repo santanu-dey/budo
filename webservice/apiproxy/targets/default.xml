@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndpoint name="default">
+    <Description>Apigee auto generated target endpoint</Description>
+    <FaultRules/>
+    <Flows>
+    	<Flow name="SOAPRequest">
+    		<Request>
+        	<Step>
+                    <FaultRules/>
+                    <Name>assignRequestPayload</Name>
+                </Step>
+        </Request>
+        <Response/>
+        <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;) and (request.verb = &quot;GET&quot;)</Condition> 
+    	</Flow>
+    </Flows>
+    <PreFlow name="PreFlow">
+       
+    </PreFlow>
+
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>TO_BE_REPLACED</URL>
+    </HTTPTargetConnection>
+</TargetEndpoint>

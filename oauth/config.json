@@ -1,0 +1,161 @@
+{
+	 "configurations":[
+		{
+			 "name":"prod",
+
+				"policies":[
+					{
+						 "name":"redirectToConsent.xml",
+						 "tokens":[
+								{
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='Location']" ,
+										"value":"http://training-backendservice.rhcloud.com/faces/authorization/login.jsp?sessionToken=kjew9034lnv120-9jksd&redirect_uri=http%3A%2F%2Ftest-4g-prod.apigee.net%2Fv2.1%2Foauth%2Fredirect%3Fresponse_type%3Dcode%26client_id%3DZ4GHyW8o3JXUrkAkGetWyUYLw99uMAkC"
+										}
+						 ]
+					},
+					{
+						 "name":"assignPayload.xml",
+							"tokens":[
+
+												{
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']" ,
+										"value":"max-age=3600"
+									},
+									
+									{
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='TO_BE_REPLACED']/@name" ,
+										"value":"Cache-Control"
+								}
+
+													
+								
+						 ]
+					}
+			 ],
+			 "proxies":[
+					{
+						 "name":"default.xml",
+					"tokens":[
+						{
+									 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
+										"value":"/v2.1/oauth"
+										}
+						 ]
+					},
+					{
+						 "name":"xyz-policy",
+					 "tokens":[
+								{
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										},
+								 {
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										}   
+						 ]
+					}
+			 ],
+			 
+				"targets":[
+					{
+						 "name":"default.xml",
+					"tokens":[
+						{
+									 "xpath":"/TargetEndpoint/HTTPTargetConnection/URL" ,
+										"value":"http://api.themoviedb.org/2.1/Movie.getInfo/en/json/35305ba947070080d6c261bc52100f49/{movieID}"
+										}
+						 ]
+					},
+					{
+						 "name":"xyz-policy",
+					 "tokens":[
+								{
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										},
+								 {
+									 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+										"value":"http://google.com"
+										}   
+						 ]
+					}
+			 ]
+			 
+		},
+	 {
+				"name":"test",
+
+				"policies":[
+						{
+						 "name":"redirectToConsent.xml",
+						 "tokens":[
+								{
+									 "xpath":"/AssignMessage/Add/Headers/Header[@name='Location']" ,
+										"value":"http://localhost:8080/training/faces/consent/login.jsp"
+										}
+						 ]
+					},
+						{
+							 "name":"xyz.xml",
+								"tokens":[
+									{
+										 "xpath":"/ProxyEndpoint/RouteRule/BasePath" ,
+											"value":"http://yahoo.com"
+											}
+							 ]
+						}
+				 ],
+				 "proxies":[
+						{
+							 "name":"default.xml",
+						"tokens":[
+							{
+										 "xpath":"/ProxyEndpoint/HTTPProxyConnection/BasePath" ,
+											"value":"/v2.1/oauth"
+											}
+							 ]
+						},
+						{
+							 "name":"xyz-policy.xml",
+						 "tokens":[
+									{
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											},
+									 {
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											}   
+							 ]
+						}
+				 ],
+				 
+					"targets":[
+						{
+							 "name":"default.xml",
+						"tokens":[
+							{
+										 "xpath":"/TargetEndpoint/HTTPTargetConnection/URL" ,
+											"value":"http://api.themoviedb.org/2.1/Movie.getInfo/en/json/35305ba947070080d6c261bc52100f49/{movieID}"
+											}
+							 ]
+						},
+						{
+							 "name":"xyz-policy.xml",
+						 "tokens":[
+									{
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											},
+									 {
+										 "xpath":"/ProxyEndpoint/RouteRule/URL" ,
+											"value":"http://google.com"
+											}   
+							 ]
+						}
+				 ]
+				 
+		}
+	 ]
+}

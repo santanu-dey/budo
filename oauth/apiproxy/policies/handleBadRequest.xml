@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="handleBadRequest">
+	<AssignTo type="response"/>
+	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+	
+	<Remove>
+		<!-- idea is to remove all conent from the incoming request -->
+	</Remove>
+
+	<Set>
+
+		<Payload contentType="applcation/json">
+			{
+				"Message": { "Error" : "BadRequest"} 
+			}
+		</Payload>
+<!-- 		<StatusCode>400</StatusCode>
+		<ReasonPhrase>Bad Request</ReasonPhrase> --> <!-- This works only when the policy is attached to the response flow & AssignTo type is response -->
+	</Set>
+
+	<Add> 
+		<Headers> 
+	        <!-- <Header name="Rresponse.status.code">400</Header>
+	        <Header name="Response-Message">Invalid Request</Header> -->
+			<!-- <Header name="TO_BE_REPLACED">TO_BE_REPLACED</Header> 
+			<Header name="Access-Control-Allow-Origin">*</Header>  -->
+		</Headers> 
+	</Add>
+
+<!-- This does not change the header. The variable seems to be added --> 	
+	<AssignVariable>
+		<Name>response.status.code</Name>   <!-- This works only when the policy is attached to the response flow & AssignTo type is response-->
+		<Value>400</Value>
+	</AssignVariable> 
+
+</AssignMessage>
